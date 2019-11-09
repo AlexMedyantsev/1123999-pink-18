@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="75" height="22" alt="Пинк">
+      </a>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a>Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a>Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a>HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <div class="page-title">
+        <h1>Фотографии пользователей</h1>
+      </div>
+      <section class="photo-blog">
+        <h2 class="photo-blog__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+        <article class="panorama-best">
+          <img class="panorama-best__image" src="https://via.placeholder.com/150x150" width="320" height="137" alt="Панорама дня">
+          <span class="panorama-best__badge"></span>
+          <div class="panorama-best__comment post-comment">
+            <b class="post-comment__author">Анна</b>
+            <span class="post-comment__date">(5 минут назад)</span>
+            <p class="post-comment__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <!-- Сердечко сделаю через ::before -->
+            <span class="post-comments__likes">Нравится: 215</span>
+          </div>
+        </article>
+        <article class="post">
+          <img class="post-image" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Загруженная фотография">
+          <div class="post-comment">
+            <b class="post-comment__author">Левон</b>
+            <span class="post-comment__date">(5 часов назад)</span>
+            <p class="post-comment__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <!-- Сердечко сделаю через ::before -->
+            <span class="post-comments__likes">Нравится: 356</span>
+          </div>
+        </article>
+        <article class="post">
+          <img class="post-image" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Загруженная фотография">
+          <div class="post-comment">
+            <b class="post-comment__author">Антон</b>
+            <span class="post-comment__date">(12 часов назад)</span>
+            <p class="post-comment__text">Соседи будут рады!</p>
+            <!-- Сердечко сделаю через ::before -->
+            <span class="post-comments__likes">Нравится: 666</span>
+          </div>
+        </article>
+        <article class="post">
+          <img class="post-image" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Загруженная фотография">
+          <div class="post-comment">
+            <b class="post-comment__author">Борис</b>
+            <span class="post-comment__date">(20 часов назад)</span>
+            <p class="post-comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <!-- Сердечко сделаю через ::before -->
+            <span class="post-comments__likes">Нравится: 215</span>
+          </div>
+        </article>
+         <article class="post">
+          <img class="post-image" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Загруженная фотография">
+          <div class="post-comment">
+            <b class="post-comment__author">Сергей</b>
+            <span class="post-comment__date">(25 часов назад)</span>
+            <p class="post-comment__text">Самая кубанскаяв мире!</p>
+            <!-- Сердечко сделаю через ::before -->
+            <span class="post-comments__likes">Нравится: 4</span>
+          </div>
+        </article>
+        <article class="post">
+          <img class="post-image" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Загруженная фотография">
+          <div class="post-comment">
+            <b class="post-comment__author">Максим</b>
+            <span class="post-comment__date">(40 часов назад)</span>
+            <p class="post-comment__text">Где снег-то?</p>
+            <!-- Сердечко сделаю через ::before -->
+            <span class="post-comments__likes">Нравится: 4</span>
+          </div>
+        </article><article class="post">
+          <img class="post-image" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Загруженная фотография">
+          <div class="post-comment">
+            <b class="post-comment__author">Надежда</b>
+            <span class="post-comment__date">(45 часов назад)</span>
+            <p class="post-comment__text">Всем GM и взаимные лайки!</p>
+            <!-- Сердечко сделаю через ::before -->
+            <span class="post-comments__likes">Нравится: 2560</span>
+          </div>
+        </article>
+      </section>
+      <section class="publish-photo">
+        <h2 class="publish-photo__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+        <div class="publsih-photo__wrapper">
+          <img class="publish-photo__image" src="https://via.placeholder.com/150x150" width="280" height="374" alt="Загруженная фотография">
+          <div class="publish-photo__settings photo-settings">
+            <ul class="photo-settings__buttons">
+              <li class="photo-settings__crop"></li>
+              <li class="photo-settings__fill"></li>
+              <li class="photo-settings__contrast"></li>
+            </ul>
+            <div class="photo-settings__slider-wrapper">
+              <input class="photo-settings__slider" type="range">
+            </div>
+            <div class="publish-photo__buttons">
+              <button class="publish-photo__confirm" type="button">Запостить</button>
+              <button class="publish-photo__cancel" type="button">Отмена</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo" src="https://htmlacademy.ru/intensive/adaptive">
+        <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="147" height="40" alt="Логотип Пинк">
+      </a>
+      <ul class="social-buttons">
+        <li class="social-buttons__item">
+          <a class="social-buttons__link" src="https://twitter.com/home" aria-label="Twiiter"></a>
+        </li>
+        <li class="social-buttons__item">
+          <a class="social-buttons__link" src="https://ru-ru.facebook.com/" aria-label="Fаcebook"></a>
+        </li>
+        <li class="social-buttons__item">
+          <a class="social-buttons__link" src="https://play.google.com/store" aria-label="Google Play"></a>
+        </li>
+      </ul>
+      <span class="page-footer__copyright">Разработано
+        <img class="page-footer__copyright-logo" src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML Academy">
+      </span>
+    </footer>
+  </body>
+</html>
