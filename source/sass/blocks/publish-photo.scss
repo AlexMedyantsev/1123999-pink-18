@@ -15,10 +15,10 @@
 }
 
 .publish-photo {
-  &__confirm {
+  &--confirm {
     color: #d22856;
   }
-  &__cancel {
+  &--cancel {
     color: rgba(40, 54, 69, 0.1);
   }
 }
