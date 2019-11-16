@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
     <header class="page-header">
@@ -28,23 +29,24 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="promo">
-        <h1 class="promo__header">Взгляните на жизнь иначе!</h1>
-        <img class="promo__image" width="320" height="314" alt="Смартфон с открытым приложением Пинк">
-        <section class="promo__download">
-          <a class="promo__download__main-link" href="#">Скачать приложение</a>
-          <ul class="promo__download__logos-list">
-            <li class="promo__download__logo apple-logo">
-              <a class="promo__download__link" href="https://www.apple.com/ru/ios/app-store/" aria-label="App Store"></a>
-            </li>
-            <li class="promo__download__logo android-logo">
-              <a class="promo__download__link" href="https://play.google.com/store" aria-label="Google Play"></a>
-            </li>
-            <li class="promo__download__logo microsoft-logo">
-              <a class="promo__download__link" href="https://www.microsoft.com/ru-ru/store/b/home" aria-label="Microsoft Store"></a>
-            </li>
-          </ul>
-        </section>
+      <div class="page-main__container">
+        <h1 class="page-main__title">Взгляните на жизнь иначе!</h1>
+        <img class="page-main__image" src="https://via.placeholder.com/150x150" width="320" height="314" alt="Смартфон с открытым приложением Пинк">
+      </div>
+      <section class="download">
+        <a class="download__main-link" href="#">Скачать приложение</a>
+        <ul class="download__list">
+          <li class="download__item">
+            <a class="download__link download__link--ios" href="https://www.apple.com/ru/ios/app-store/" aria-label="App Store"></a>
+          </li>
+          <li class="download__item">
+            <a class="download__link download__link--android" href="https://play.google.com/store" aria-label="Google Play"></a>
+          </li>
+          <li class="download__item">
+            <a class="download__link download__link--microsoft" href="https://www.microsoft.com/ru-ru/store/b/home" aria-label="Microsoft Store"></a>
+          </li>
+        </ul>
+        <p class="download__access">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
       <section class="advantages">
       <p class="advantages__promo">Устали от серости мегаполиса?<br/> Нам есть, что вам предложить!</p>
@@ -54,7 +56,7 @@
           <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </li>
         <li class="advantages__item">
-          <h3 class="advantages__title">Меняет мир вокург</h3>
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
           <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </li>
         <li class="advantages__item">
@@ -85,7 +87,7 @@
           </p>
         </div>
       </section>
-      <section class="price-section">
+      <section class="price">
         <table class="price-table slider">
           <thead class="price-table__head">
             <tr class="price-table__row">
