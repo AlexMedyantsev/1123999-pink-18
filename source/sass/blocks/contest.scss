@@ -25,22 +25,23 @@
   font-size: 14px;
   text-align: center;
   border: 2px solid #e5e5e5;
+
   &:hover {
     border: 2px solid #283645;
   }
+
   &:focus {
     border: 2px solid #d22856;
     outline: none;
   }
+  
   &:focus::placeholder {
     color: transparent;
   }
 }
 
 .contest__name-label {
-  color: black;
   font-size: 14px;
-  color: #d22856;
   line-height: 2.14;
   text-align: left;
   text-transform: uppercase;
@@ -106,6 +107,7 @@
   line-height: 2.14;
   color: #283645;
   text-align: center;
+
   &--star {
     color: #d22856;
   }

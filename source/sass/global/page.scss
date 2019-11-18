@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -19,6 +21,7 @@ body {
 a {
   color: white;
   text-decoration: none;
+  
   &:visited {
     color: white;
   }
