@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -14,13 +16,12 @@ body {
   // font-size: ;
   // line-height: ;
   // color: ;
-  //Временно, Чтобы были видны шрифты
-  background-color: #f2f2f2;
 }
 
 a {
   color: white;
   text-decoration: none;
+
   &:visited {
     color: white;
   }

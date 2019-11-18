@@ -1,0 +1,114 @@
+.contest__title {
+  font-size: 14px;
+  color: black;
+  width: 273px;
+  text-align: center;
+}
+
+.contest__fieldset {
+  border: 0;
+}
+
+.contest__legend {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2.14px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.input {
+  color: #283645;
+  line-height: 2.14;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  border: 2px solid #e5e5e5;
+
+  &:hover {
+    border: 2px solid #283645;
+  }
+
+  &:focus {
+    border: 2px solid #d22856;
+    outline: none;
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+}
+
+.contest__name-label {
+  font-size: 14px;
+  line-height: 2.14;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.contest__comment-text {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.67;
+  text-align: left;
+  color: #283645;
+  resize: none;
+}
+
+.contest__achievements {
+  background-color: #f2f2f2;
+}
+
+.contest__achievements-label {
+  font-size: 18px;
+  font-weight: normal;
+  color: #283645;
+  line-height: 1.67;
+  text-align: left;
+}
+
+.contest__contacts-label {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2.14;
+  text-align: left;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.contest__app {
+  background-color: #f2f2f2;
+}
+
+.contest__app-label {
+  font-size: 18px;
+  font-weight: normal;
+  color: #283645;
+  line-height: 1.67;
+  text-align: left;
+}
+
+.contest__submit {
+  background-color: #2aab6d;
+  border: 0;
+  border-radius: 2px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contest__required {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2.14;
+  color: #283645;
+  text-align: center;
+
+  &--star {
+    color: #d22856;
+  }
+}
