@@ -7,10 +7,12 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-      </a>
-      <button class="page-header__toggle" type="button">Открыть меню</button>
+      <div class="page-header__container">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -29,42 +31,57 @@
       </nav>
     </header>
     <main class="page-main">
-      <div class="page-main__container">
-        <h1 class="page-main__title">Взгляните на жизнь иначе!</h1>
-        <img class="page-main__image" src="https://via.placeholder.com/150x150" width="320" height="314" alt="Смартфон с открытым приложением Пинк">
+      <div class="page-main__wrapper">
+        <div class="page-main__container">
+          <h1 class="page-main__title">Взгляните на жизнь иначе!</h1>
+          <img class="page-main__image" src="https://via.placeholder.com/150x150" width="320" height="314" alt="Смартфон с открытым приложением Пинк">
+        </div>
+        <section class="download">
+          <a class="download__main-link" href="#">Скачать приложение</a>
+          <ul class="download__list">
+            <li class="download__item">
+              <a class="download__link download__link--ios" href="https://www.apple.com/ru/ios/app-store/" aria-label="App Store"></a>
+            </li>
+            <li class="download__item">
+              <a class="download__link download__link--android" href="https://play.google.com/store" aria-label="Google Play"></a>
+            </li>
+            <li class="download__item">
+              <a class="download__link download__link--microsoft" href="https://www.microsoft.com/ru-ru/store/b/home" aria-label="Microsoft Store"></a>
+            </li>
+          </ul>
+          <p class="download__access">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </section>
       </div>
-      <section class="download">
-        <a class="download__main-link" href="#">Скачать приложение</a>
-        <ul class="download__list">
-          <li class="download__item">
-            <a class="download__link download__link--ios" href="https://www.apple.com/ru/ios/app-store/" aria-label="App Store"></a>
-          </li>
-          <li class="download__item">
-            <a class="download__link download__link--android" href="https://play.google.com/store" aria-label="Google Play"></a>
-          </li>
-          <li class="download__item">
-            <a class="download__link download__link--microsoft" href="https://www.microsoft.com/ru-ru/store/b/home" aria-label="Microsoft Store"></a>
-          </li>
-        </ul>
-        <p class="download__access">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section>
       <section class="advantages">
-      <p class="advantages__promo">Устали от серости мегаполиса?<br/> Нам есть, что вам предложить!</p>
-      <ul class="advantages__list slider-list">
-        <li class="advantages__item">
-          <h3 class="advantages__title">Поднимает настроение</h3>
-          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Меняет мир вокруг</h3>
-          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </li>
-        <li class="advantages__item">
-          <h3 class="advantages__title">Заводит новых друзей</h3>
-          <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </li>
-      </ul>
-      <img class="advantages__image" src="https://via.placeholder.com/150x150" width="157" height="320" alt="Телефон">
+        <p class="advantages__promo">Устали от серости мегаполиса?<br/> Нам есть, что вам предложить!</p>
+        <div class="advantages__wrapper">
+          <ul class="advantages__list slider-list">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              <img class="advantages__image advantages__image--first" src="https://via.placeholder.com/150x150" width="157" height="320" alt="Телефон">
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <img class="advantages__image advantages__image--second" src="https://via.placeholder.com/150x150" width="157" height="320" alt="Телефон">
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              <img class="advantages__image advantages__image--third" src="https://via.placeholder.com/150x150" width="157" height="320" alt="Телефон">
+            </li>
+          </ul>
+          <img class="advantages__image advantages__image--outside" src="https://via.placeholder.com/150x150" width="157" height="320" alt="Телефон">
+        </div> 
+        <div class="advantages__study ">
+          <div class="advantages__alarm-clock"></div>
+          <div class="advantages__container">
+            <b class="advantages__effect">Эффект на 24 часа!</b>
+            <p class="advantages__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="advantages__more">Узнать больше об исследовании</a>
+          </div>
+        </div> 
       </section>
       <section class="reviews">
         <div class="reviews-list slider">
@@ -168,19 +185,19 @@
       <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.626500259789!2d30.324913289047686!3d59.93856375735322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1463165208330" allowfullscreen="">
       </iframe>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--index">
       <a class="page-footer__logo" src="https://htmlacademy.ru/intensive/adaptive">
         <img class="page-footer__logo-image"  src="https://via.placeholder.com/150x150" width="147" height="40" alt="Логотип Пинк">
       </a>
       <ul class="social-buttons">
         <li class="social-buttons__item">
-          <a class="social-buttons__link" src="https://twitter.com/home" aria-label="Twiiter"></a>
+          <a class="social-buttons__link social-buttons__link--twitter" src="https://twitter.com/home" aria-label="Twiiter"></a>
         </li>
         <li class="social-buttons__item">
-          <a class="social-buttons__link" src="https://ru-ru.facebook.com/" aria-label="Fаcebook"></a>
+          <a class="social-buttons__link social-buttons__link--facebook" src="https://ru-ru.facebook.com/" aria-label="Fаcebook"></a>
         </li>
         <li class="social-buttons__item">
-          <a class="social-buttons__link" src="https://play.google.com/store" aria-label="Google Play"></a>
+          <a class="social-buttons__link social-buttons__link--youtube" src="https://play.google.com/store" aria-label="Google Play"></a>
         </li>
       </ul>
       <span class="page-footer__copyright">Разработано

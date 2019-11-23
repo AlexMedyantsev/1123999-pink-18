@@ -7,10 +7,12 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-      </a>
-      <button class="page-header__toggle" type="button">Открыть меню</button>
+      <div class="page-header__container">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -29,13 +31,15 @@
       </nav>
     </header>
     <main class="page-main">
-      <div class="page-main__container">
-        <h1 class="page-main__title">Фотографии пользователей</h1>
+      <div class="page-main__wrapper">
+        <div class="page-main__container">
+          <h1 class="page-main__title">Фотографии пользователей</h1>
+        </div>
       </div>
       <section class="photo-blog">
         <h2 class="photo-blog__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
         <article class="panorama-best">
-          <img class="panorama-best__image" src="https://via.placeholder.com/150x150" width="320" height="137" alt="Панорама дня">
+          <img class="panorama-best__image" src="https://via.placeholder.com/150x150" alt="Панорама дня">
           <span class="panorama-best__badge"></span>
           <div class="panorama-best__comment post-comment">
             <b class="post-comment__author">Анна</b>
@@ -45,7 +49,8 @@
             <span class="post-comment__likes">Нравится: 215</span>
           </div>
         </article>
-        <article class="post">
+        <div class="post">
+        <article class="post__article">
           <img class="post-image" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Загруженная фотография">
           <div class="post-comment">
             <b class="post-comment__author">Левон</b>
@@ -55,7 +60,7 @@
             <span class="post-comment__likes">Нравится: 356</span>
           </div>
         </article>
-        <article class="post">
+        <article class="post__article">
           <img class="post-image" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Загруженная фотография">
           <div class="post-comment">
             <b class="post-comment__author">Антон</b>
@@ -65,7 +70,7 @@
             <span class="post-comment__likes">Нравится: 666</span>
           </div>
         </article>
-        <article class="post">
+        <article class="post__article">
           <img class="post-image" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Загруженная фотография">
           <div class="post-comment">
             <b class="post-comment__author">Борис</b>
@@ -75,17 +80,17 @@
             <span class="post-comment__likes">Нравится: 215</span>
           </div>
         </article>
-        <article class="post">
+        <article class="post__article">
           <img class="post-image" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Загруженная фотография">
           <div class="post-comment">
             <b class="post-comment__author">Сергей</b>
             <span class="post-comment__date">(25 часов назад)</span>
-            <p class="post-comment__text">Самая кубанскаяв мире!</p>
+            <p class="post-comment__text">Самая кубанская в мире!</p>
             <span class="post-comment__heart"></span>
             <span class="post-comment__likes">Нравится: 4</span>
           </div>
         </article>
-        <article class="post">
+        <article class="post__article">
           <img class="post-image" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Загруженная фотография">
           <div class="post-comment">
             <b class="post-comment__author">Максим</b>
@@ -94,7 +99,7 @@
             <span class="post-comment__heart"></span>
             <span class="post-comment__likes">Нравится: 4</span>
           </div>
-        </article><article class="post">
+        </article><article class="post__article">
           <img class="post-image" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Загруженная фотография">
           <div class="post-comment">
             <b class="post-comment__author">Надежда</b>
@@ -104,6 +109,7 @@
             <span class="post-comment__likes">Нравится: 2560</span>
           </div>
         </article>
+      </div>
       </section>
       <section class="publish-photo">
         <h2 class="publish-photo__title">Затмите их всех!<br/> Выкладывайте все, что накопилось<br/> в телефоне!</h2>
@@ -132,13 +138,13 @@
       </a>
       <ul class="social-buttons">
         <li class="social-buttons__item">
-          <a class="social-buttons__link" src="https://twitter.com/home" aria-label="Twiiter"></a>
+          <a class="social-buttons__link social-buttons__link--twitter" src="https://twitter.com/home" aria-label="Twiiter"></a>
         </li>
         <li class="social-buttons__item">
-          <a class="social-buttons__link" src="https://ru-ru.facebook.com/" aria-label="Fаcebook"></a>
+          <a class="social-buttons__link social-buttons__link--facebook" src="https://ru-ru.facebook.com/" aria-label="Fаcebook"></a>
         </li>
         <li class="social-buttons__item">
-          <a class="social-buttons__link" src="https://play.google.com/store" aria-label="Google Play"></a>
+          <a class="social-buttons__link social-buttons__link--youtube" src="https://play.google.com/store" aria-label="Google Play"></a>
         </li>
       </ul>
       <span class="page-footer__copyright">Разработано
