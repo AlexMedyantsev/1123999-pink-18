@@ -41,9 +41,10 @@
     background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
     background-size: cover;
   }
+
   .page-main__image {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     right: 100px;
   }
 }
