@@ -1,5 +1,6 @@
 // Global Styles
 @import "global/variables.scss";
+// @import "global/outlines.scss";
 @import "global/fonts.scss";
 @import "global/page.scss";
 @import "global/normalize.scss";
@@ -8,14 +9,15 @@
 @import "blocks/contacts.scss";
 @import "blocks/contest.scss";
 @import "blocks/download.scss";
-@import "blocks/main-nav.scss";
+// @import "blocks/main-nav.scss";
 @import "blocks/price-table.scss";
 @import "blocks/photo-blog.scss";
 @import "blocks/panorama-best.scss";
 @import "blocks/post-comment.scss";
 @import "blocks/page-main.scss";
-@import "blocks/page-header.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/publish-photo.scss";
 @import "blocks/reviews.scss";
 @import "blocks/site-list.scss";
+@import "blocks/page-header.scss";
+

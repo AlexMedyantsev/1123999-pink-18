@@ -1,6 +1,44 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-footer__copyright {
   font-size: 14px;
   line-height: 1.29;
   text-align: left;
   color: #283645;
+}
+
+.social-buttons {
+  display: flex;
+}
+
+.social-buttons__link {
+  outline: 1px solid red;
+  display: flex;
+  width: 46px;
+  height: 46px;  
+  &--twitter {
+  background: url("../img/icon-twitter.svg") no-repeat 50% 50%;
+  }
+  &--facebook {
+  background: url("../img/icon-facebook.svg") no-repeat 50% 50%;
+  }
+  &--youtube {
+  background: url("../img/icon-youtube.svg") no-repeat 50% 50%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer--index {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

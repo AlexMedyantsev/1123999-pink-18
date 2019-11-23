@@ -29,3 +29,26 @@
   text-align: left;
   color: #d22856;
 }
+
+.post {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .post {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .post__article {
+    // Ширина на глаз (временно) 
+    width: 50%;
+    outline: 1px solid red;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .post__article {
+    width: 33%;
+  }
+}

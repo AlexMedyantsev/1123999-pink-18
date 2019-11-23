@@ -16,3 +16,9 @@
   text-align: center;
   width: 230px;
 }
+
+@media (max-width: $tablet-width) {
+  .download {
+    margin: 0 auto;
+  }
+}
