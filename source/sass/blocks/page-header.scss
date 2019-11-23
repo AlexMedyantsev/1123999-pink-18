@@ -24,11 +24,13 @@
     align-items: center;
     height: 110px;
   }
+
   .page-header__toggle {
     display: none;
   }
+
   .main-nav__list {
     display: flex;
-    border: 0
+    border: 0;
   }
 }
