@@ -9,11 +9,15 @@
   background-position: 0 110px;
   background-size: 258px 286px;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .download__title {
-  display: none;
-  padding: 0 30px;
+  display: block;
+  position: absolute;
+  top: 29px;
+  left: 0px;
+  font-size: 24px;
   font-weight: 300;
   line-height: 1.2;
   text-align: center;
@@ -77,14 +81,12 @@
     background-size: 700px 545px;
     height: 619px;
     width: 620px;
-    outline: 1px solid red;
     display: flex;
     align-items: flex-start;
   }
 
   .download__container {
     width: 300px;
-    outline: 1px solid gold;
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
@@ -92,6 +94,7 @@
 
   .download__title {
     display: block;
+    position: relative;
     margin-top: 0;
     margin-bottom: 31px;
     font-size: 40px;
@@ -110,7 +113,6 @@
     margin-top: 45px;
     margin-bottom: 35px;
     align-items: center;
-    outline: 1px solid pink;
   }
 
   .download__link--android {
@@ -134,11 +136,11 @@
   }
 
   .download__title {
+    position: relative;
     font-size: 50px;
     font-weight: 300;
     margin-top: 17px;
     text-align: center;
-    outline: 1px solid pink;
     padding-left: 30px;
     margin-bottom: 50px;
   }
@@ -151,6 +153,6 @@
   .download__button {
     font-size: 21px;
     font-weight: bold;
-    margin-top: 2wpx;
+    margin-top: 2px;
   }
 }
