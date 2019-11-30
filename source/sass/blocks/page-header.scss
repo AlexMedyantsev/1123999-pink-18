@@ -1,9 +1,11 @@
 .page-header {
   position: relative;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  background-size: 600px 466px;
+  background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+  // background-size: 660px 462px;
   background-color: #283645;
-  background-position: 50% 0%;
+  background-size: 660px 460px;
+  background-position: 50% 0;
+  min-height: 600px;
 }
 
 // .page-header__nav-wrapper {
@@ -19,9 +21,8 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    min-height: 80px;
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
-    background-position: 50% 0;
+    background-position: 60% 0;
     background-size: 1200px 729px;
   }
 }
