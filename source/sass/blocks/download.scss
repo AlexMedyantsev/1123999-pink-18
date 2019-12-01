@@ -21,6 +21,7 @@
   font-weight: 300;
   line-height: 1.2;
   text-align: center;
+  outline: 1px solid gold;
 }
 
 .download__button {
@@ -32,13 +33,13 @@
 .download__list {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   margin: 32px 0 23px;
 }
 
 .download__item {
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-left: 17px;
+  margin-right: 17px;
 }
 
 .download__link {
@@ -97,6 +98,7 @@
     position: relative;
     margin-top: 0;
     margin-bottom: 31px;
+    margin-left: 0;
     font-size: 40px;
   }
 
@@ -113,6 +115,10 @@
     margin-top: 45px;
     margin-bottom: 35px;
     align-items: center;
+  }
+
+  .download__button {
+    margin-top: 31px;
   }
 
   .download__link--android {
