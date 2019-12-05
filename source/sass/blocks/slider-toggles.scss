@@ -1,0 +1,32 @@
+.slider__toggles {
+  outline: 1px solid red;
+  display: block;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__toggle {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: rgba(40, 54, 69, 0.3);
+  border: 3px solid white;
+  padding: 0;
+  &--second {
+    margin-left: 13px;
+    margin-right: 13px;
+  }
+  &--table {
+    border-color: #f2f2f2;
+    background-color: rgba(40, 54, 69, 0.3);
+  }
+
+  &--active {
+    width: 12px;
+    height: 12px;
+    border: 3px solid black;
+    background-color: white;
+  }
+}

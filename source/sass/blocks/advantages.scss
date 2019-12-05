@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-bottom: 322px;
+  padding-bottom: 319px;
   background-image: url("../img/iphone-screen-3-tablet@1x.png");
   background-repeat: no-repeat;
   background-position: 50% 100%;
@@ -200,19 +200,23 @@
 
   .advantages__study {
     display: flex;
-    width: 660px;
-    min-height: 480px;
+    min-height: 437px;
     padding-top: 60px;
     padding-right: 36px;
-    padding-bottom: 83px;
-    padding-left: 21px;
-    margin: 0 auto;
+    padding-bottom: 63px;
     background-color: white;
+    outline: 1px solid red;
+  }
+  
+  .advantages__study-container {
+    display: flex;
+    width: 660px;
+    margin: 0 auto;
   }
 
   .advantages__alarm-clock {
     width: 900px;
-    margin-left: -1px;
+    margin-left: 22px;
     background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
     background-repeat: no-repeat, no-repeat;
     background-size: 202px 202px, 238px 276px;
@@ -232,7 +236,7 @@
 
   .advantages__container {
     padding-top: 36px;
-    margin-left: 22px;
+    margin-left: -11px;
   }
 
   .advantages__effect {
@@ -265,7 +269,8 @@
 
   .advantages__promo {
     font-size: 50px;
-    width: 735px;
+    width: 737px;
+    padding-right: 4px;
     &--bottom {
       margin-top: 17px;
       line-height: 59px;
@@ -374,13 +379,24 @@
     width: 980px;
     margin: 0 auto;
     background-color: #f2f2f2;
+    outline: 1px solid red;
   }
-
+  
+  .advantages__study-container {
+    display: flex;
+    width: auto;
+    outline: 1px solid green;
+    margin-top: 1px;
+    margin-left: 18px;
+  }
+  
   .advantages__alarm-clock {
     width: 366px;
+    margin-left: -1px;
     background-size: 253px 253px, 298px 345px;
-    background-position: 24px 68px, 0 0;
+    background-position: 24px 67px, 0 -1px;
     position: relative;
+    outline: 1px solid red;
     &::before {
       content: "24";
       position: absolute;
@@ -396,7 +412,7 @@
   .advantages__container {
     margin-left: 0;
     padding-top: 93px;
-    // width: 1200px;
+    margin-left: 35px;
   }
 
   .advantages__effect {
@@ -409,7 +425,7 @@
     font-size: 18px;
     line-height: 30px;
     width: 521px;
-    margin-bottom: 30px;
+    margin-bottom: 36px;
   }
   
   .advantages__more {
@@ -419,4 +435,3 @@
     display: inline-block;
   }
 }
-

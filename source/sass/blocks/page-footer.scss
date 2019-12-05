@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.page-footer--index {
+    display: none;
+}
+
 .page-footer__copyright {
   font-size: 14px;
   line-height: 1.29;
@@ -30,12 +34,6 @@
 
   &--youtube {
     background: url("../img/icon-youtube.svg") no-repeat 50% 50%;
-  }
-}
-
-@media (max-width: $tablet-width) {
-  .page-footer--index {
-    display: none;
   }
 }
 

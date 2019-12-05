@@ -78,31 +78,34 @@
           </div>
         </div>
         <div class="advantages__study">
-          <div class="advantages__alarm-clock"></div>
-          <div class="advantages__container">
-            <b class="advantages__effect">Эффект<br class="advantage_br br"/> на 24 часа!</b>
-            <p class="advantages__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-            <a class="advantages__more" href="#">Узнать больше об исследовании</a>
+          <div class="advantages__study-container">
+            <div class="advantages__alarm-clock"></div>
+            <div class="advantages__container">
+              <b class="advantages__effect">Эффект<br class="advantage_br br"/> на 24 часа!</b>
+              <p class="advantages__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <a class="advantages__more" href="#">Узнать больше об исследовании</a>
+            </div>
           </div>
         </div>
       </section>
       <section class="reviews">
         <div class="reviews-list slider">
-          <blockquote class="reviews__item slider-item">
+          <blockquote class="reviews__item reviews__items--first slider-item">
+            <cite class="reviews__author">Николай Петров</cite>
+            <span class="reviews__occupation">25 лет, водитель трамвая</span>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <blockquote class="reviews__item reviews__items--second reviews__item--hidden slider-item">
             <cite class="reviews__author">Николай Петров</cite>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
-          <blockquote class="reviews__item slider-item">
-            <cite class="reviews__author">Николай Петров</cite>
-            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </blockquote>
-          <blockquote class="reviews__item slider-item">
+          <blockquote class="reviews__item reviews__items--third reviews__item--hidden slider-item">
             <cite class="reviews__author">Николай Петров</cite>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle slider__toggle--active" type="button"></button>
+            <button class="slider__toggle slider__toggle--second" type="button"></button>
             <button class="slider__toggle" type="button"></button>
           </p>
         </div>
@@ -170,10 +173,10 @@
             </tr>
           </tbody>
         </table>
-        <p class="price-sections__toggles slider__toggles" >
-          <button class="slider__toggle" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
+        <p class="price__toggles slider__toggles" >
+          <button class="slider__toggle slider__toggle--table" type="button"></button>
+          <button class="slider__toggle slider__toggle--second slider__toggle--active" type="button"></button>
+          <button class="slider__toggle slider__toggle--table" type="button"></button>
         </p>
       </section>
       <section class="contacts">
@@ -186,6 +189,7 @@
         <span class="contacts__small">ул. Большая Конюшенная, 19/8</span>
       </section>
       <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.626500259789!2d30.324913289047686!3d59.93856375735322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1463165208330" allowfullscreen="">
+        <div class="map__triangle"></div>
       </iframe>
     </main>
     <footer class="page-footer page-footer--index">
