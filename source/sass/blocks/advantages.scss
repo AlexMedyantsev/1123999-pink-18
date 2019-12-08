@@ -205,7 +205,6 @@
     padding-right: 36px;
     padding-bottom: 63px;
     background-color: white;
-    outline: 1px solid red;
   }
   
   .advantages__study-container {
@@ -379,13 +378,11 @@
     width: 980px;
     margin: 0 auto;
     background-color: #f2f2f2;
-    outline: 1px solid red;
   }
   
   .advantages__study-container {
     display: flex;
     width: auto;
-    outline: 1px solid green;
     margin-top: 1px;
     margin-left: 18px;
   }
@@ -396,7 +393,6 @@
     background-size: 253px 253px, 298px 345px;
     background-position: 24px 67px, 0 -1px;
     position: relative;
-    outline: 1px solid red;
     &::before {
       content: "24";
       position: absolute;

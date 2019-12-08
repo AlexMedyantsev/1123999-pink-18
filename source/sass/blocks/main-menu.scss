@@ -6,7 +6,6 @@
   line-height: 32px;
   position: absolute;
   width: 100%;
-  outline: 1px solid yellow;
   &--closed {
     display: none;
   }
@@ -15,7 +14,6 @@
 .main-menu__item {
   position: relative;
   border-top: 1px solid rgba(255,255,255,.15);
-  // outline: 1px solid red;
   text-align: center;
   background-color: $dark;
 }
@@ -29,13 +27,6 @@
   color: inherit;
   text-transform: uppercase;
   text-decoration: none;
-  // outline: 1px solid pink;
-  // &--active{
-  //   border-bottom: 1px solid white;
-  //   padding-right: 0;
-  //   padding-bottom: 0;
-  //   padding-left: 0;
-  // }
 }
 
 @media (min-width: $desktop-width) {
@@ -45,7 +36,6 @@
     width: auto;
     position: relative;
     border: 0;
-    outline: 1px solid green;
   }
 
   .main-menu__item {

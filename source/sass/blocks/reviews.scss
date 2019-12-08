@@ -1,6 +1,5 @@
 .reviews {
   background-color: #ffffff;
-  outline: 1px solid blue;
   display: flex;
   justify-content: center;
   padding-top: 42px;
@@ -12,10 +11,8 @@
 }
 
 .reviews__item {
-  outline: 1px solid green;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   width: 278px;
   margin-bottom: 33px;
   &--hidden {
@@ -32,7 +29,6 @@
   margin: 0 auto;
   margin-bottom: 13px;
   text-align: center;
-  outline: 1px solid red;
 }
 
 .reviews__text {
@@ -43,7 +39,6 @@
   text-align: center;
   color: #283645;
   margin: 0 auto;
-  outline: 1px solid pink;
 }
 
 .reviews__occupation {
