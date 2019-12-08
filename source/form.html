@@ -6,46 +6,53 @@
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-      </a>
-      <button class="page-header__toggle" type="button">Открыть меню</button>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+    <header class="page-header page-header--photo">
+      <div class="page-header__nav-wrapper page-header__nav-wrapper--transparent">
+        <nav class="page-header__main-nav main-nav">
+          <div class="main-nav__logo-wrapper">
+            <a class="main-nav__logo-link">
+            </a>
+            <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
+          </div>
+          <ul class="main-menu main-menu--closed">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link " href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link main-menu__link--active" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h1 class="page-header__title page-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
     <main class="page-main">
-      <section class="page-main__container">
-        <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      </section>
       <section class="contest">
-        <p class="contest__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <p class="contest__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <p class="contest__title--hidden">Пожалуйста, заполните форму ниже:</p></p>
         <form class="contest__form">
           <!-- Инициалы -->
           <fieldset class="contest__name contest__fieldset">
-            <label class="contest__name-label">Фамилия:
-              <input type="text" class="contest__name-input input" id="surname" aria-label="Укажите фамилию" placeholder="Укажите фамилию *" required>
-            </label>
-            <label class="contest__name-label">Имя:
-              <input type="text" class="contest__name-input input" id="name" aria-label="Укажите Имя" placeholder="Введите ваше имя *" required>
-            </label>
-            <label class="contest__name-label">Отчество:
-              <input type="text" class="contest__name-input input" id="patronymic" aria-label="Укажите отчество" placeholder="Ну и отчество тоже">
-            </label>
+            <div class="contest__name-wrapper">
+              <label class="contest__name-label">Фамилия:<br class="contest__label-br"/>
+                <input type="text" class="contest__name-input input" id="surname" aria-label="Укажите фамилию" placeholder="Укажите фамилию *" required>
+              </label>
+            </div>
+            <div class="contest__name-wrapper">
+              <label class="contest__name-label">Имя:<br class="contest__label-br"/>
+                <input type="text" class="contest__name-input input" id="name" aria-label="Укажите Имя" placeholder="Введите ваше имя *" required>
+              </label>
+            </div>
+            <div class="contest__name-wrapper">
+              <label class="contest__name-label">Отчество:<br class="contest__label-br"/>
+                <input type="text" class="contest__name-input input" id="patronymic" aria-label="Укажите отчество" placeholder="Ну и отчество тоже">
+              </label>
+            </div>
           </fieldset>
           <!-- Достижения -->
           <fieldset class="contest__achievements contest__fieldset">
@@ -108,23 +115,23 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo" src="https://htmlacademy.ru/intensive/adaptive">
-        <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="147" height="40" alt="Логотип Пинк">
-      </a>
-      <ul class="social-buttons">
-        <li class="social-buttons__item">
-          <a class="social-buttons__link social-buttons__link--twitter" src="https://twitter.com/home" aria-label="Twiiter"></a>
-        </li>
-        <li class="social-buttons__item">
-          <a class="social-buttons__link social-buttons__link--facebook" src="https://ru-ru.facebook.com/" aria-label="Fаcebook"></a>
-        </li>
-        <li class="social-buttons__item">
-          <a class="social-buttons__link social-buttons__link--youtube" src="https://play.google.com/store" aria-label="Google Play"></a>
-        </li>
-      </ul>
-      <span class="page-footer__copyright">Разработано
-        <img class="page-footer__copyright-logo" src="https://via.placeholder.com/150x150" width="27" height="34" alt="HTML Academy">
-      </span>
+      <div class="page-footer__container">
+        <a class="page-footer__logo" src="https://htmlacademy.ru/intensive/adaptive"></a>
+        <ul class="social-buttons">
+          <li class="social-buttons__item">
+            <a class="social-buttons__link social-buttons__link--twitter" src="https://twitter.com/home" aria-label="Twiiter"></a>
+          </li>
+          <li class="social-buttons__item">
+            <a class="social-buttons__link social-buttons__link--facebook" src="https://ru-ru.facebook.com/" aria-label="Fаcebook"></a>
+          </li>
+          <li class="social-buttons__item">
+            <a class="social-buttons__link social-buttons__link--youtube" src="https://play.google.com/store" aria-label="Google Play"></a>
+          </li>
+        </ul>
+        <span class="page-footer__copyright">Разработано
+          <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        </span>
+      </div>
     </footer>
   </body>
 </html>
