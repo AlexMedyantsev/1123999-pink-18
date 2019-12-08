@@ -19,24 +19,24 @@
 
 @media (min-width: $tablet-width) {
   .photo-blog__title-container {
-  	padding-top: 91px;
-  	padding-bottom: 76px;
+    padding-top: 91px;
+    padding-bottom: 76px;
   }
 
   .photo-blog__title {
-  	width: 438px;
-  	font-size: 18px;
-  	line-height: 30px;
+    width: 438px;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .photo-blog__title-container {
-  	padding-top: 92px;
-  	padding-bottom: 88px;
+    padding-top: 92px;
+    padding-bottom: 88px;
   }
 
   .photo-blog__title {
-  	width: 575px;
+    width: 575px;
   }
 }
