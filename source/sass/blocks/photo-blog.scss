@@ -2,11 +2,41 @@
   background-color: white;
 }
 
+.photo-blog__title-container {
+  padding-top: 46px;
+  padding-bottom: 49px;
+}
+
 .photo-blog__title {
   width: 243px;
   font-size: 14px;
-  line-height: 2.14;
+  line-height: 30px;
   text-align: center;
   font-weight: normal;
   color: #283645;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-blog__title-container {
+  	padding-top: 91px;
+  	padding-bottom: 76px;
+  }
+
+  .photo-blog__title {
+  	width: 438px;
+  	font-size: 18px;
+  	line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-blog__title-container {
+  	padding-top: 92px;
+  	padding-bottom: 88px;
+  }
+
+  .photo-blog__title {
+  	width: 575px;
+  }
 }
