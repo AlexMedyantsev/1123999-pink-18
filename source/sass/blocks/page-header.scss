@@ -1,12 +1,11 @@
 .page-header {
   position: relative;
   background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
-  // background-size: 660px 462px;
   background-color: #283645;
   background-size: 660px 460px;
   background-position: 50% 0;
   min-height: 600px;
-  
+
   &--photo {
     min-height: 239px;
     background-size: 750px 460px;
