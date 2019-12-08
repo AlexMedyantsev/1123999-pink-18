@@ -1,12 +1,13 @@
 .panorama-best__image-wrapper {
   position: relative;
+  
   &::before {
     content: "Панорама дня";
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 0px;
+    top: 0;
     right: 20px;
     width: 140px;
     height: 36px;
@@ -62,6 +63,7 @@
   color: $pink;
   text-transform: uppercase;
   position: relative;
+
   &::before {
     position: absolute;
     content: "";
@@ -146,6 +148,7 @@
   .panorama-best__likes {
     top: 25px;
     right: 62px;
+
     &::before {
       display: none;
     }

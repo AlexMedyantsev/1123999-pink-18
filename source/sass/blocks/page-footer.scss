@@ -6,7 +6,7 @@
 }
 
 .page-footer--index {
-    display: none;
+  display: none;
 }
 
 .page-footer__container {
@@ -44,6 +44,7 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     padding: 0;
+
     &--index {
       display: flex;
     }
@@ -73,6 +74,7 @@
     border-radius: 50%;
     border: 3px solid rgba(40, 54, 69, 0.1);
     margin-right: 14px;
+
     &:last-of-type() {
       margin-right: 0;
     }

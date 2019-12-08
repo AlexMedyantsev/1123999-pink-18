@@ -2,10 +2,11 @@
   margin: 0;
   padding-left: 0;
   list-style: none;
-  border-top: 1px solid #000;
+  border-top: 1px solid #000000;
   line-height: 32px;
   position: absolute;
   width: 100%;
+
   &--closed {
     display: none;
   }
@@ -13,7 +14,7 @@
 
 .main-menu__item {
   position: relative;
-  border-top: 1px solid rgba(255,255,255,.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   text-align: center;
   background-color: $dark;
 }
@@ -51,10 +52,12 @@
     padding: 0;
     padding-top: 4px;
     border: 0;
+
     &--active {
-      border-bottom: 2px solid #FFFFFF;
+      border-bottom: 2px solid white;
     }
   }
+
   .main-menu__item:nth-child(4n + 4) {
     margin-right: 10px;
   }

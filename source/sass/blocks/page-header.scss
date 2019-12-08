@@ -6,6 +6,7 @@
   background-size: 660px 460px;
   background-position: 50% 0;
   min-height: 600px;
+  
   &--photo {
     min-height: 239px;
     background-size: 750px 460px;
@@ -13,11 +14,8 @@
   }
 }
 
-// .page-header__nav-wrapper {
-// }
-
 .page-header__nav-wrapper--transparent {
-  background-color: rgba(0,0,0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-header__main-nav {
@@ -31,6 +29,7 @@
   line-height: 29px;
   margin: 0 auto;
   margin-top: 29px;
+
   &--photo {
     width: 225px;
   }
@@ -54,6 +53,7 @@
     font-size: 50px;
     font-weight: 300;
     line-height: 62px;
+
     &--form {
       width: 475px;
     }
@@ -65,6 +65,7 @@
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
     background-position: 50% 0;
     min-height: 854px;
+
     &--photo {
       min-height: 394px;
     }
@@ -77,6 +78,7 @@
     font-size: 50px;
     font-weight: 300;
     line-height: 59px;
+
     &--form {
       width: 748px;
     }

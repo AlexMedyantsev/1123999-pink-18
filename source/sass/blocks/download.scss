@@ -26,8 +26,8 @@
 }
 
 .download__button {
-  border-color: #fff;
-  color: #fff;
+  border-color: white;
+  color: white;
   height: 55px;
 }
 
@@ -46,6 +46,7 @@
 .download__link {
   display: block;
   background-repeat: no-repeat;
+
   &--apple {
     background-image: url("../img/logo-apple.svg");
     width: 47px;
@@ -99,6 +100,7 @@
       margin-right: 16px;
       margin-bottom: 3px;
     }
+    
     &--microsoft {
       margin-bottom: 3px;
     }
