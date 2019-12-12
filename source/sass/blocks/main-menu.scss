@@ -1,0 +1,64 @@
+.main-menu {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  border-top: 1px solid #000000;
+  line-height: 32px;
+  position: absolute;
+  width: 100%;
+
+  &--closed {
+    display: none;
+  }
+}
+
+.main-menu__item {
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  background-color: $dark;
+}
+
+.main-menu__link {
+  display: block;
+  padding: 15px;
+  border-bottom: 1px solid black;
+  font-size: 18px;
+  font-weight: 700;
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media (min-width: $desktop-width) {
+  .main-menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    position: relative;
+    border: 0;
+  }
+
+  .main-menu__item {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+  }
+
+  .main-menu__link {
+    font-weight: normal;
+    text-transform: none;
+    margin-left: 80px;
+    padding: 0;
+    padding-top: 4px;
+    border: 0;
+
+    &--active {
+      border-bottom: 2px solid white;
+    }
+  }
+
+  .main-menu__item:nth-child(4n + 4) {
+    margin-right: 10px;
+  }
+}

@@ -1,9 +1,11 @@
 .price {
   background-color: #f2f2f2;
+  padding-bottom: 48px;
 }
 
 .price-table {
   border-collapse: collapse;
+  margin: 0 auto;
 }
 
 .price-table__header {
@@ -43,4 +45,9 @@
 .price-table__cell {
   background-color: white;
   border: solid 2px #e5e5e5;
+}
+
+.price__toggles {
+  margin: 0 auto;
+  margin-top: 45px;
 }

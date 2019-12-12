@@ -1,5 +1,8 @@
-.page-main__container {
-  background: url("../img/bg-back-mobile@1x.jpg");
+.page-main__wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 500px;
 }
 
 .page-main__title {
@@ -7,4 +10,41 @@
   font-size: 24px;
   font-weight: 300;
   text-align: center;
+}
+
+@media (max-width: $tablet-width) {
+  .page-main__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+    background-size: cover;
+    height: 500px;
+  }
+
+  .page-main__title {
+    margin: 0 auto;
+  }
+
+  .page-main__image {
+    margin: 0 auto;
+  }
+
+  .download {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__wrapper {
+    justify-content: flex-start;
+    background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .page-main__image {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+  }
 }

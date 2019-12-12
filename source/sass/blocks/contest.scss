@@ -3,6 +3,14 @@
   color: black;
   width: 273px;
   text-align: center;
+  margin: 0 auto;
+  margin-top: 46px;
+  margin-bottom: 18px;
+  line-height: 30px;
+
+  &-hidden {
+    display: none;
+  }
 }
 
 .contest__fieldset {
@@ -25,6 +33,7 @@
   font-size: 14px;
   text-align: center;
   border: 2px solid #e5e5e5;
+  border-radius: 2px;
 
   &:hover {
     border: 2px solid #283645;
@@ -40,11 +49,45 @@
   }
 }
 
+.contest__name {
+  margin: 0 auto;
+  width: 276px;
+}
+
+.contest__name-wrapper {
+  display: flex;
+  margin-top: 25px;
+
+  &:nth-of-type(1) {
+    margin-top: 0;
+  }
+}
+
 .contest__name-label {
   font-size: 14px;
-  line-height: 2.14;
   text-align: left;
   text-transform: uppercase;
+  color: $pink;
+  display: block;
+  line-height: 1;
+  margin-left: 21px;
+}
+
+.contest__name-input {
+  display: flex;
+  justify-content: flex-start;
+  width: 280px;
+  height: 63px;
+  margin-top: 13px;
+  margin-left: -21px;
+  line-height: 0;
+
+  &::placeholder {
+    font-size: 18px;
+    text-align: left;
+    padding-left: 18px;
+    color: $dark;
+  }
 }
 
 .contest__comment-text {
