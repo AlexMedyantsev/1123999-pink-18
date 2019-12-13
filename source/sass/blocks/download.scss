@@ -51,18 +51,22 @@
     background-image: url("../img/logo-apple.svg");
     width: 47px;
     height: 56px;
+    margin-right: 1px;
   }
 
   &--android {
     background-image: url("../img/logo-android.svg");
     width: 43px;
     height: 47px;
+    margin-top: 7px;
+    margin-right: 5px;
   }
 
   &--microsoft {
     background-image: url("../img/logo-microsoft.svg");
     width: 44px;
     height: 41px;
+    margin-top: 9px;
   }
 }
 
@@ -70,7 +74,7 @@
   font-size: 14px;
   font-weight: 300;
   font-style: normal;
-  line-height: 1.71;
+  line-height: 24px;
   text-align: center;
 }
 
@@ -154,7 +158,23 @@
 
   .download__container {
     width: 315px;
-    padding-left: 7px;
+    padding-left: 8px;
+  }
+
+  .download__link {
+    &--apple {
+      margin: 0;
+      margin-right: 34px;
+    }
+
+    &--android {
+      margin: 0;
+      margin-right: 37px;
+    }
+
+    &--microsoft {
+      margin: 0;
+    }
   }
 
   .download__title {
@@ -163,20 +183,36 @@
     font-size: 50px;
     font-weight: 300;
     text-align: center;
-    line-height: 59px;
-    margin-top: -5px;
+    line-height: 60px;
+    margin-top: -8px;
     margin-bottom: 50px;
     margin-left: -11px;
   }
 
+  .download__item {
+    margin: 0;
+    padding: 0;
+  }
+
   .download__list {
-    margin-top: 70px;
+    margin-top: 68px;
     margin-bottom: 53px;
+    width: 205px;
+    padding: 0;
+    margin-top: 66px;
+    margin-bottom: 58px;
+    margin-left: 50px;
   }
 
   .download__button {
     font-size: 21px;
     font-weight: bold;
     margin-top: 25px;
+    margin-left: 2px;
+    width: 300px;
+  }
+
+  .download__description {
+    margin-left: -3px;
   }
 }

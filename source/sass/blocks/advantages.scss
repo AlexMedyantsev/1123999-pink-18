@@ -24,6 +24,7 @@
   text-align: center;
   line-height: 29px;
   margin: 0 auto;
+  margin-top: 2px;
   color: #283645;
 
   &--bottom {
@@ -269,8 +270,8 @@
 
   .advantages__promo {
     font-size: 50px;
+    margin-top: 2px;
     width: 737px;
-    padding-right: 4px;
 
     &--bottom {
       margin-top: 17px;
@@ -299,9 +300,6 @@
   }
 
   .advantages__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin: 0;
     width: 240px;
   }
@@ -310,11 +308,11 @@
     display: block;
     order: 1;
     height: 300px;
-    width: 240px;
+    width: 280px;
     margin: 0 auto;
     background-repeat: no-repeat;
     // background-size: 291px 298px;
-    background-position: 50% 0;
+    background-position: 50% 0px;
 
     &--first {
       background-image: url("../img/iphone-screen-1-desktop@1x.png");

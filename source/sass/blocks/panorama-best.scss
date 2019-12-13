@@ -27,13 +27,18 @@
   background-size: 100%;
 }
 
-.panorama-best__bracket {
-  font-size: 14px;
-}
-
 .panorama-best__date {
   font-size: 14px;
   text-transform: uppercase;
+}
+
+.panorama-best__comment {
+  background-color: #f2f2f2;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 18px;
+  padding-left: 17.5px;
+  padding-bottom: 26px;
 }
 
 .panorama-best__text {
@@ -43,21 +48,13 @@
   color: $dark;
   line-height: 24px;
   margin-top: -1px;
-}
-
-.panorama-best__comment {
-  background-color: #f2f2f2;
-  width: 280px;
-  margin: 0 auto;
-  padding-top: 18px;
-  padding-left: 17.5px;
-  padding-bottom: 20px;
-}
+  margin-bottom: 9px;
+} 
 
 .panorama-best__likes {
   display: block;
   width: 324px;
-  margin-top: 10px;
+  margin-top: 15px;
   padding-left: 32px;
   font-size: 12px;
   color: $pink;
@@ -67,7 +64,7 @@
   &::before {
     position: absolute;
     content: "";
-    top: 6px;
+    top: 1px;
     left: 0;
     width: 13px;
     height: 12px;
@@ -95,7 +92,7 @@
     width: 620px;
     position: relative;
     padding-top: 24px;
-    padding-bottom: 25px;
+    padding-bottom: 16px;
     padding-left: 27.5px;
   }
 
@@ -103,7 +100,7 @@
     position: absolute;
     display: flex;
     width: auto;
-    top: 25px;
+    top: 30px;
     right: 59px;
     margin: 0;
     padding: 0;
@@ -116,7 +113,7 @@
     &::after {
       position: absolute;
       content: "";
-      top: 5px;
+      top: 0;
       right: -30px;
       width: 13px;
       height: 12px;
@@ -143,10 +140,11 @@
 
   .panorama-best__comment {
     width: 940px;
+    padding-bottom: 15px;
   }
 
   .panorama-best__likes {
-    top: 25px;
+    top: 30px;
     right: 62px;
 
     &::before {
@@ -156,7 +154,7 @@
     &::after {
       position: absolute;
       content: "";
-      top: 5px;
+      top: 0;
       right: -31px;
       width: 13px;
       height: 12px;
