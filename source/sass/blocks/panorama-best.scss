@@ -22,9 +22,11 @@
 .panorama-best__image {
   display: flex;
   width: 100%;
-  height: 137px;
-  background: url("../img/panorama-mobile@1x.jpg") no-repeat;
-  background-size: 100%;
+  object-fit: cover;
+}
+
+.panorama-best__image-picture {
+  display: block;
 }
 
 .panorama-best__date {
