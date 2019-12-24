@@ -22,9 +22,11 @@
 .panorama-best__image {
   display: flex;
   width: 100%;
-  height: 137px;
-  background: url("../img/panorama-mobile@1x.jpg") no-repeat;
-  background-size: 100%;
+  object-fit: cover;
+}
+
+.panorama-best__image-picture {
+  display: block;
 }
 
 .panorama-best__date {
@@ -53,7 +55,7 @@
 
 .panorama-best__likes {
   display: block;
-  width: 324px;
+  width: auto;
   margin-top: 15px;
   padding-left: 32px;
   font-size: 12px;
@@ -76,7 +78,7 @@
 @media (min-width: $tablet-width) {
   .panorama-best__image {
     width: 100%;
-    height: 509px;
+    min-height: 509px;
     background: url("../img/panorama-tablet@1x.jpg") no-repeat 50% 0;
     background-size: cover;
   }
@@ -126,7 +128,7 @@
 @media (min-width: $desktop-width) {
   .panorama-best__image {
     width: 100%;
-    height: 506px;
+    min-height: 506px;
     background: url("../img/panorama-desktop@1x.jpg") no-repeat;
     background-size: cover;
   }

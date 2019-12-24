@@ -11,7 +11,7 @@
       <div class="page-header__nav-wrapper page-header__nav-wrapper--transparent">
         <nav class="page-header__main-nav main-nav">
           <div class="main-nav__logo-wrapper">
-            <a class="main-nav__logo-link">
+            <a class="main-nav__logo-link" href="index.html">
             </a>
             <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
           </div>
@@ -40,7 +40,11 @@
         </div>
         <article class="panorama-best">
           <div class="panorama-best__image-wrapper">
-            <div class="panorama-best__image" alt="Панорама дня"></div>
+            <picture class="panorama-best__image-picture">
+              <source media="(min-width: 960px)" srcset="../img/panorama-desktop@1x.jpg 1x, ../img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="../img/panorama-tablet@1x.jpg 1x, ../img/panorama-tablet@2x.jpg 2x">
+              <img class="panorama-best__image" srcset="../img/panorama-mobile@1x.jpg 1x, ../img/panorama-mobile@2x.jpg 2x" alt="Панорама дня"></img>
+            </picture>
           </div>
           <div class="panorama-best__comment">
             <b class="panorama-best__author post__author">Анна</b>
@@ -51,7 +55,11 @@
         </article>
         <div class="post">
           <article class="post__article">
-            <img class="post__image" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Загруженная фотография">
+            <picture>
+              <source media="(min-width:960px)" srcset="../img/photo-car-desktop@1x.jpg 1x, ../img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="../img/photo-car-tablet@1x.jpg 1x, ../img/photo-car-tablet@2x.jpg 2x">
+              <img class="post__image" srcset="../img/photo-car-mobile@1x 1x, ../img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+            </picture>
             <div class="post__comment">
               <b class="post__author">Левон</b>
               <span class="post__date"><span class="post__bracket">(</span>5 часов назад)</span>
@@ -60,7 +68,11 @@
             </div>
           </article>
           <article class="post__article">
-            <img class="post__image" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Загруженная фотография">
+            <picture>
+              <source media="(min-width:960px)" srcset="../img/photo-drumset-desktop@1x.jpg 1x, ../img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="../img/photo-drumset-tablet@1x.jpg 1x, ../img/photo-drumset-tablet@2x.jpg 2x">
+              <img class="post__image" srcset="../img/photo-drumset-mobile@1x 1x, ../img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+            </picture>
             <div class="post__comment">
               <b class="post__author">Антон</b>
               <span class="post__date"><span class="post__bracket">(</span>12 часов назад)</span>
@@ -69,7 +81,11 @@
             </div>
           </article>
           <article class="post__article">
-            <img class="post__image" src="https://via.placeholder.com/150x150" width="280" height="300" alt="Загруженная фотография">
+            <picture>
+              <source media="(min-width:960px)" srcset="../img/photo-window-desktop@1x.jpg 1x, ../img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="../img/photo-window-tablet@1x.jpg 1x, ../img/photo-window-tablet@2x.jpg 2x">
+              <img class="post__image" srcset="../img/photo-window-mobile@1x 1x, ../img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+            </picture>
             <div class="post__comment">
               <b class="post__author">Борис</b>
               <span class="post__date"><span class="post__bracket">(</span>20 часов назад)</span>
@@ -78,7 +94,11 @@
             </div>
           </article>
           <article class="post__article">
-            <img class="post__image" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Загруженная фотография">
+            <picture>
+              <source media="(min-width:960px)" srcset="../img/photo-fair-desktop@1x.jpg 1x, ../img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="../img/photo-fair-tablet@1x.jpg 1x, ../img/photo-fair-tablet@2x.jpg 2x">
+              <img class="post__image" srcset="../img/photo-fair-mobile@1x 1x, ../img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+            </picture>
             <div class="post__comment">
               <b class="post__author">Сергей</b>
               <span class="post__date"><span class="post__bracket">(</span>25 часов назад)</span>
@@ -87,7 +107,11 @@
             </div>
           </article>
           <article class="post__article">
-            <img class="post__image" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Загруженная фотография">
+            <picture>
+              <source media="(min-width:960px)" srcset="../img/photo-pov-desktop@1x.jpg 1x, ../img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="../img/photo-pov-tablet@1x.jpg 1x, ../img/photo-pov-tablet@2x.jpg 2x">
+              <img class="post__image" srcset="../img/photo-pov-mobile@1x 1x, ../img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+            </picture>
             <div class="post__comment">
               <b class="post__author">Максим</b>
               <span class="post__date"><span class="post__bracket">(</span>40 часов назад)</span>
@@ -96,7 +120,11 @@
             </div>
           </article>
           <article class="post__article">
-            <img class="post__image" src="https://via.placeholder.com/150x150" width="280" height="180" alt="Загруженная фотография">
+            <picture>
+              <source media="(min-width:960px)" srcset="../img/photo-road-desktop@1x.jpg 1x, ../img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="../img/photo-road-tablet@1x.jpg 1x, ../img/photo-road-tablet@2x.jpg 2x">
+              <img class="post__image" srcset="../img/photo-road-mobile@1x 1x, ../img/photo-road-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+            </picture>
             <div class="post__comment">
               <b class="post__author">Надежда</b>
               <span class="post__date"><span class="post__bracket">(</span>45 часов назад)</span>
