@@ -8,22 +8,314 @@
   margin-bottom: 18px;
   line-height: 30px;
 
-  &-hidden {
-    display: none;
+  &--hidden {
+    visibility: hidden;
   }
 }
 
 .contest__fieldset {
   border: 0;
+  position: relative;
+  width: 100%;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.contest__name {
+  padding-top: 2px;
+  padding-bottom: 44px;
+}
+
+.contest__name-list {
+
+}
+
+.contest__name-item {
+  width: 276px;
+  margin: 0 auto;
+  margin-bottom: 21px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contest__name-label {
+  font-size: 14px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $pink;
+  line-height: 1;
+  margin-left: 21px;
+}
+
+.contest__name-input {
+  display: flex;
+  justify-content: flex-start;
+  width: 280px;
+  height: 63px;
+  margin-top: 13px;
+  line-height: 0;
+
+  &::placeholder {
+    font-size: 18px;
+    text-align: left;
+    padding-left: 18px;
+    color: $dark;
+  }
+}
+
+// Achievements
+
+.contest__achievements {
+  background-color: #f2f2f2;
+  padding-top: 115px;
+  padding-bottom: 42px;
+}
+
+.contest__achievements-label {
+  font-size: 18px;
+  font-weight: normal;
+  color: #283645;
+  line-height: 1.67;
+  text-align: left;
+  display: block;
+}
+
+.contest__achievements-list {
+  margin: 0 auto;
+  width: 276px;
+}
+
+.contest__achievements-item {
+  min-height: 35px;
+  margin-bottom: 47px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Contacts
+
+.contest__contacts {
+  padding-top: 31px;
+  padding-bottom: 44px;
+}
+
+.contest__contacts-list {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.contest__contacts-item {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contest__contacts-label {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2.14;
+  text-align: left;
+  text-transform: uppercase;
+  color: #d22856;
+  display: block;
+  padding-bottom: 5px;
+}
+
+.contest__contacts-input {
+  display: block;
+  width: 280px;
+  height: 59px;
+  margin: 0 auto;
+}
+
+// App
+
+.contest__app {
+  background-color: #f2f2f2;
+  padding-top: 115px;
+}
+
+.contest__app-list {
+  width: 276px;
+  margin: 0 auto;
+}
+.contest__app-item {
+  height: 36px;
+  margin-bottom: 39px;
+}
+
+.contest__app-label {
+  font-size: 18px;
+  font-weight: normal;
+  color: #283645;
+  line-height: 1.67;
+  text-align: left;
+  display: block;
+}
+
+// Comment
+
+.contest__comment {
+  padding-top: 71px;
+  padding-bottom: 46px;
+}
+
+.contest__comment-text {
+  width: 280px;
+  height: 202px;
+  padding-top: 15px;
+  padding-left: 17px;
+  margin: 0 auto;
+  display: block;
+}
+
+// Submit
+
+.contest__submit {
+  padding-bottom: 16px; 
+}
+
+.contest__submit-button {
+  display: block;
+  width: 280px;
+  height: 63px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+  background-color: #2aab6d;
+  border: 0;
+  border-radius: 2px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contest__submit-required {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2.14;
+  color: #283645;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+
+  &--star {
+    color: $pink;
+  }
+}
+// Радио кнопка
+
+.contest__radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.contest__radio + label {
+  position: relative;
+  padding: 0 0 0 68px;
+  cursor: pointer;
+}
+
+.contest__radio + label::before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: 0;
+  width: 37px;
+  height: 36px;
+  background: white;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.contest__radio + label::after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: 0;
+  width: 37px;
+  height: 36px;
+  background: white;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.contest__radio:checked + label::after {
+  background: url("../img/icon-map-marker.svg") no-repeat center;
+}
+
+// Чекбокс кнопка
+
+.contest__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  // margin: 20px;
+}
+
+.contest__checkbox + label {
+  position: relative;
+  padding: 0 0 0 68px;
+  cursor: pointer;
+}
+
+
+.contest__checkbox + label::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 37px;
+  height: 37px;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+  background: white;
+}
+
+.contest__checkbox + label::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 37px;
+  height: 37px;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.contest__checkbox:checked + label::after {
+  background: url("../img/icon-yes.svg") no-repeat center;
 }
 
 .contest__legend {
   font-size: 14px;
   font-weight: normal;
-  line-height: 2.14px;
-  text-align: left;
+  line-height: 18px;
+  text-align: center;
   text-transform: uppercase;
   color: #d22856;
+  margin: 0 auto;
+  width: 225px;
+
+  &--inside {
+    position: absolute;
+    content: "";
+    top: 37px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
 }
 
 .input {
@@ -49,47 +341,6 @@
   }
 }
 
-.contest__name {
-  margin: 0 auto;
-  width: 276px;
-}
-
-.contest__name-wrapper {
-  display: flex;
-  margin-top: 25px;
-
-  &:nth-of-type(1) {
-    margin-top: 0;
-  }
-}
-
-.contest__name-label {
-  font-size: 14px;
-  text-align: left;
-  text-transform: uppercase;
-  color: $pink;
-  display: block;
-  line-height: 1;
-  margin-left: 21px;
-}
-
-.contest__name-input {
-  display: flex;
-  justify-content: flex-start;
-  width: 280px;
-  height: 63px;
-  margin-top: 13px;
-  margin-left: -21px;
-  line-height: 0;
-
-  &::placeholder {
-    font-size: 18px;
-    text-align: left;
-    padding-left: 18px;
-    color: $dark;
-  }
-}
-
 .contest__comment-text {
   font-size: 18px;
   font-weight: normal;
@@ -97,61 +348,4 @@
   text-align: left;
   color: #283645;
   resize: none;
-}
-
-.contest__achievements {
-  background-color: #f2f2f2;
-}
-
-.contest__achievements-label {
-  font-size: 18px;
-  font-weight: normal;
-  color: #283645;
-  line-height: 1.67;
-  text-align: left;
-}
-
-.contest__contacts-label {
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 2.14;
-  text-align: left;
-  text-transform: uppercase;
-  color: #d22856;
-}
-
-.contest__app {
-  background-color: #f2f2f2;
-}
-
-.contest__app-label {
-  font-size: 18px;
-  font-weight: normal;
-  color: #283645;
-  line-height: 1.67;
-  text-align: left;
-}
-
-.contest__submit {
-  background-color: #2aab6d;
-  border: 0;
-  border-radius: 2px;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1.67;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.contest__required {
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 2.14;
-  color: #283645;
-  text-align: center;
-
-  &--star {
-    color: #d22856;
-  }
 }
