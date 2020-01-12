@@ -5,11 +5,11 @@
   text-align: center;
   margin: 0 auto;
   margin-top: 46px;
-  margin-bottom: 18px;
+  margin-bottom: 36px;
   line-height: 30px;
 
   &--hidden {
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -113,7 +113,7 @@
 }
 
 .contest__contacts-item {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 
   &:last-child {
     margin-bottom: 0;
@@ -129,6 +129,7 @@
   color: #d22856;
   display: block;
   padding-bottom: 5px;
+  margin-left: 21px;
 }
 
 .contest__contacts-input {
@@ -387,7 +388,7 @@
     font-size: 18px;
 
     &--hidden {
-      visibility: visible;
+      display: block;
       margin: 0 auto;
     }
   }
@@ -480,10 +481,10 @@
       display: block;
       position: absolute;
       content: "";
-      top: 0;
-      right: 0;
-      width: 62px;
-      height: 62px;
+      top: 2px;
+      right: 2px;
+      width: 60px;
+      height: 59px;
       background-size: 20px 19px;
       background: #e5e5e5 url("../img/icon-phone.svg") no-repeat center;
       z-index: 10;
@@ -493,6 +494,7 @@
   .contest__contacts-label {
     order: 2;
     padding-left: 20px;
+    margin: 0;
     width: 300px;
   }
 
