@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
-    <header class="page-header page-header--photo">
+    <header class="page-header page-header--form">
       <div class="page-header__nav-wrapper page-header__nav-wrapper--transparent">
         <nav class="page-header__main-nav main-nav">
           <div class="main-nav__logo-wrapper">
@@ -35,7 +35,7 @@
     </header>
     <main class="page-main">
       <section class="contest">
-        <p class="contest__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <p class="contest__title--hidden">Пожалуйста, заполните форму ниже:</p></p>
+        <p class="contest__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <p class="contest__title contest__title--hidden">Пожалуйста, заполните форму ниже:</p></p>
         <form class="contest__form">
           <!-- Инициалы -->
           <fieldset class="contest__name contest__fieldset">
@@ -55,7 +55,7 @@
             </ul>
           </fieldset>
           <!-- Достижения -->
-          <fieldset class="contest__achievements contest__fieldset">
+          <fieldset class="contest__achievements contest__fieldset contest__fieldset--small-border">
             <legend class="contest__achievements-legend contest__legend contest__legend--inside">Ваши безбашенные достижения в путешествии</legend>
             <ul class="contest__achievements-list">
               <li class="contest__achievements-item">
@@ -84,7 +84,8 @@
               </li>
           </fieldset>
           <!-- Контактная информация -->
-          <fieldset class="contest__contacts contest__fieldset">
+          <fieldset class="contest__contacts contest__fieldset contest__fieldset--small-border">
+            <legend class="contest__legend contest__contacts-legend">Контактная информация</legend>
             <ul class="contest__contacts-list">
               <li class="contest__contacts-item">
                 <label class="contest__contacts-label" for="phone">Номер телефона</label>
@@ -92,12 +93,12 @@
               </li>
               <li class="contest__contacts-item">
                 <label class="contest__contacts-label" for="email">Адрес почты</label>
-                  <input class="contest__contacts-input input" type="email" id="email" aria-label="Введите почту" placeholder="Введите почту *" required>
+                <input class="contest__contacts-input input" type="email" id="email" aria-label="Введите почту" placeholder="Введите почту *" required>
               </li>
             </div>
           </fieldset>
           <!-- Использованное приложение -->
-          <fieldset class="contest__app contest__fieldset">
+          <fieldset class="contest__app contest__fieldset contest__fieldset--small-border">
             <legend class="contest__app-legend contest__legend contest__legend--inside">С каким приложением путешествовали?</legend>
             <ul class="contest__app-list">
               <li class="contest__app-item">
@@ -114,13 +115,15 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="contest__comment contest__fieldset">
+          <fieldset class="contest__comment contest__fieldset contest__fieldset--small-border">
             <legend class="contest__comment-legend contest__legend contest__legend--inside">Опишите свои эмоции</legend>
             <textarea class="contest__comment-text input"type="comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" aria-label="Расскажите о себе"></textarea>
           </fieldset>
           <div class="contest__submit">
             <button class="contest__submit-button" type="submit">Отправить форму</button>
-            <span class="contest__submit-required"><span class="contest__submit-required--star">*</span> — обязательные поля</span>
+            <div class="contest__submit-required-wrapper">
+              <span class="contest__submit-required"><span class="contest__submit-required--star">*</span> — обязательные поля</span>
+            </div>
           </div>
         </form>
       </section>

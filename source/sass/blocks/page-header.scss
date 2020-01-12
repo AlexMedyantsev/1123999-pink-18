@@ -47,6 +47,7 @@
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
     background-position: 50% -10px;
     background-size: 1200px 739px;
+    min-height: 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -63,6 +64,7 @@
 
     &--form {
       width: 475px;
+      margin-bottom: 77px;
     }
   }
 }
