@@ -115,6 +115,10 @@
         <table class="price-table slider">
           <thead class="price-table__head">
             <tr class="price-table__row">
+              <th class="price-table__header price-table__header--left-side price-table__header--first">
+                <b class="price-table__title"></b>
+                <span class="price-table__price"></span>
+              </th>
               <th class="price-table__header">
                 <b class="price-table__title">База</b>
                 <span class="price-table__price">1,99 USD</span>
@@ -131,8 +135,8 @@
           </thead>
           <tbody class="price-table__body">
             <tr class="price-table__row">
-              <td class="price-table__cell">
-                <span class="price-table__feature price-table__feature--available">placeholder</span>
+              <td class="price-table__cell price-table__cell--left-side price-table__cell--first">
+                <span class="price-table__feature price-table__feature--available price-table__feature--left-side">Розовый фильтр</span>
                 <!-- Здесь иконка через ::after -->
               </td>
               <td class="price-table__cell">
@@ -140,13 +144,17 @@
                 <!-- Здесь иконка через ::after -->
               </td>
               <td class="price-table__cell">
-                <span class="price-table__feature price-table__feature--available">placeholder</span>
+                <span class="price-table__feature price-table__feature--available">Розовый фильтр</span>
+                <!-- Здесь иконка через ::after -->
+              </td>
+              <td class="price-table__cell">
+                <span class="price-table__feature price-table__feature--available">Розовый фильтр</span>
                 <!-- Здесь иконка через ::after -->
               </td>
             </tr>
             <tr class="price-table__row">
-              <td class="price-table__cell">
-                <span class="price-table__feature price-table__feature--available">placeholder</span>
+              <td class="price-table__cell price-table__cell--left-side">
+                <span class="price-table__feature price-table__feature--available price-table__feature--left-side">Розовый фильтр</span>
                 <!-- Здесь иконка через ::after -->
               </td>
               <td class="price-table__cell">
@@ -154,13 +162,21 @@
                 <!-- Здесь иконка через ::after -->
               </td>
               <td class="price-table__cell">
-                <span class="price-table__feature price-table__feature--available">placeholder</span>
+                <span class="price-table__feature price-table__feature--available">Смайлики</span>
+                <!-- Здесь иконка через ::after -->
+              </td>
+              <td class="price-table__cell">
+                <span class="price-table__feature price-table__feature--available">Смайлики</span>
                 <!-- Здесь иконка через ::after -->
               </td>
             </tr>
             <tr class="price-table__row">
+              <td class="price-table__cell price-table__cell--left-side">
+                <span class="price-table__feature price-table__feature--available price-table__feature--left-side">Розовый фильтр</span>
+                <!-- Здесь иконка через ::after -->
+              </td>
               <td class="price-table__cell">
-                <span class="price-table__feature price-table__feature--available">placeholder</span>
+                <span class="price-table__feature price-table__feature--available">Комментарии</span>
                 <!-- Здесь иконка через ::after -->
               </td>
               <td class="price-table__cell">
@@ -168,7 +184,7 @@
                 <!-- Здесь иконка через ::after -->
               </td>
               <td class="price-table__cell">
-                <span class="price-table__feature price-table__feature--available">placeholder</span>
+                <span class="price-table__feature price-table__feature--available">Комментарии</span>
                 <!-- Здесь иконка через ::after -->
               </td>
             </tr>
@@ -181,13 +197,22 @@
         </p>
       </section>
       <section class="contacts">
-        <span class="contacts__title">Остались вопросы? Свяжитесь с нами!</span>
-        <b class="contacts__large">Звоните</b>
-        <span class="contacts__small">+7 (812) 555-66-66</span>
-        <b class="contacts__large">Пишите:</b>
-        <span class="contacts__small">mail@htmlacademy.ru</span>
-        <b class="contacts__large">Приезжайте в гости:</b>
-        <span class="contacts__small">ул. Большая Конюшенная, 19/8</span>
+          <span class="contacts__title">Остались вопросы? Свяжитесь с нами!</span>
+        </div>
+        <div class="contacts__container">
+          <div class="contacts__wrapper contacts__wrapper--phone">
+            <b class="contacts__large">Звоните:</b>
+            <span class="contacts__small">+7 (812) 555-66-66</span>
+          </div>
+          <div class="contacts__wrapper contacts__wrapper--email">
+            <b class="contacts__large contacts__large--email">Пишите:</b>
+            <span class="contacts__small">mail@htmlacademy.ru</span>
+          </div>
+          <div class="contacts__wrapper contacts__wrapper--address">
+            <b class="contacts__large contacts__large--address">Приезжайте в гости:</b>
+            <span class="contacts__small">ул. Большая<br/> Конюшенная,19/8</span>
+          </div>
+        </div>
       </section>
       <div class="mapp">
       <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A244dfff469d74f3eee917e97b10f02a3d9eb9e7236bbeacc4dfba84a6afec0d8&amp;source=constructor" frameborder="0"></iframe>

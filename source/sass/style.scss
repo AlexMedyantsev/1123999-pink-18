@@ -1,6 +1,5 @@
 // Global Styles
 @import "global/variables.scss";
-// @import "global/outlines.scss";
 @import "global/fonts.scss";
 @import "global/page.scss";
 @import "global/normalize.scss";
@@ -18,9 +17,8 @@
 @import "blocks/post.scss";
 @import "blocks/page-main.scss";
 @import "blocks/page-footer.scss";
-@import "blocks/publish-photo.scss";
+@import "blocks/publish.scss";
 @import "blocks/reviews.scss";
-// @import "blocks/site-list.scss";
 @import "blocks/slider-toggles.scss";
 @import "blocks/social-buttons.scss";
 @import "blocks/page-header.scss";

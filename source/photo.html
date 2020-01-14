@@ -121,9 +121,9 @@
           </article>
           <article class="post__article">
             <picture>
-              <source media="(min-width:960px)" srcset="../img/photo-road-desktop@1x.jpg 1x, ../img/photo-road-desktop@2x.jpg 2x">
-              <source media="(min-width:660px)" srcset="../img/photo-road-tablet@1x.jpg 1x, ../img/photo-road-tablet@2x.jpg 2x">
-              <img class="post__image" srcset="../img/photo-road-mobile@1x 1x, ../img/photo-road-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+              <source media="(min-width:960px)" srcset="../img/photo-wing-desktop@1x.jpg 1x, ../img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="../img/photo-wing-tablet@1x.jpg 1x, ../img/photo-wing-tablet@2x.jpg 2x">
+              <img class="post__image" srcset="../img/photo-wing-mobile@1x 1x, ../img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
             </picture>
             <div class="post__comment">
               <b class="post__author">Надежда</b>
@@ -134,25 +134,46 @@
           </article>
         </div>
       </section>
-      <section class="publish-photo">
-        <h2 class="publish-photo__title">Затмите их всех!<br/> Выкладывайте все, что накопилось<br/> в телефоне!</h2>
-        <div class="publish-photo__wrapper">
-          <img class="publish-photo__image" src="https://via.placeholder.com/150x150" width="280" height="374" alt="Загруженная фотография">
-          <div class="publish-photo__settings photo-settings">
-            <ul class="photo-settings__buttons">
-              <li class="photo-settings__crop"></li>
-              <li class="photo-settings__fill"></li>
-              <li class="photo-settings__contrast"></li>
-            </ul>
-            <div class="photo-settings__slider-wrapper">
-              <input class="photo-settings__slider" type="range">
-            </div>
-            <div class="publish-photo__buttons">
-              <button class="publish-photo__button publish-photo--confirm" type="button" aria-label="Опубликовать">Запостить</button>
-              <button class="publish-photo__button publish-photo--cancel" type="button" aria-label="Отмена">Отмена</button>
+      <section class="publish">
+        <h2 class="publish__title">Затмите их всех!<br/> Выкладывайте все, что накопилось в<br class="br"/> телефоне!</h2>
+        <form class="publish__form">
+          <div class="publish__wrapper">
+            <div class="publish__container">
+              <picture class="publish__picture">
+                <source media="(min-width:960px)" srcset="../img/photo-road-desktop@1x.jpg 1x, ../img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width:660px)" srcset="../img/photo-road-tablet@1x.jpg 1x, ../img/photo-road-tablet@2x.jpg 2x">
+                <img class="publish__image" srcset="../img/photo-road-mobile@1x 1x, ../img/photo-road-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+              </picture>
+              <div class="publish__settings">
+                <div class="publish__filters">
+                  <div class="publish__tools-buttons">
+                    <input type="radio" class="publish__input publish__input--crop" id="publish__crop-icon" name="publish-filter" checked>
+                    <label class="publish__toggle publish__toggle--crop" for="publish__crop-icon"></label>
+                    <input type="radio" class="publish__input publish__input--fill"id="publish__fill-icon" name="publish-filter">
+                    <label class="publish__toggle publish__toggle--fill" for="publish__fill-icon"></label>
+                    <input type="radio" class="publish__input publish__input--contrast" id="publish__contrast-icon" name="publish-filter">
+                    <label class="publish__toggle publish__toggle--contrast" for="publish__contrast-icon"></label>
+                  </div>
+                  <div class="publish__tools-container">
+                    <div class="publish__tools-wrapper publish__tools-wrapper--crop publish__tools-wrapper--current">
+                      <input type="range" id="publish__range--crop" min="0" max="100" class="publish__range publish__range--crop">
+                    </div>
+                    <div class="publish__tools-wrapper publish__tools-wrapper--fill">
+                      <input type="range" id="publish__range--fill" min="0" max="100" class="publish__range publish__range--fill">
+                    </div>
+                    <div class="publish__tools-wrapper publish__tools-wrapper--contrast">
+                      <input type="range" id="publish__range--contrast" min="0" max="100" class="publish__range publish__range--contrast">
+                    </div>
+                  </div>
+                  <div class="publish__confirm">
+                    <button class="publish__confirm-button button publish__confirm-button--post">Запостить</button>
+                    <button class="publish__confirm-button button publish__confirm-button--cancel">Отмена</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
@@ -166,7 +187,7 @@
             <a class="social-buttons__link social-buttons__link--facebook" src="https://ru-ru.facebook.com/" aria-label="Fаcebook"></a>
           </li>
           <li class="social-buttons__item">
-            <a class="social-buttons__link social-buttons__link--youtube" src="https://play.google.com/store" aria-label="Google Play"></a>
+            <a class="social-buttons__link social-buttons__link--youtube social-buttons__link--last" src="https://play.google.com/store" aria-label="Google Play"></a>
           </li>
         </ul>
         <span class="page-footer__copyright">Разработано

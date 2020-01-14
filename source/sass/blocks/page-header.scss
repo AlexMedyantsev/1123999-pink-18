@@ -5,12 +5,18 @@
   background-size: 660px 460px;
   background-position: 50% 0;
   min-height: 600px;
-  
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-tablet@2x.jpg");
   }
 
   &--photo {
+    min-height: 239px;
+    background-size: 750px 460px;
+    background-position: 50% 25px;
+  }
+
+  &--form {
     min-height: 239px;
     background-size: 750px 460px;
     background-position: 50% 25px;
@@ -47,6 +53,7 @@
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
     background-position: 50% -10px;
     background-size: 1200px 739px;
+    min-height: 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -63,6 +70,7 @@
 
     &--form {
       width: 475px;
+      margin-bottom: 77px;
     }
   }
 }
@@ -80,6 +88,11 @@
     }
 
     &--photo {
+      min-height: 394px;
+      background-size: 2560px 853px;
+    }
+
+    &--form {
       min-height: 394px;
       background-size: 2560px 853px;
     }

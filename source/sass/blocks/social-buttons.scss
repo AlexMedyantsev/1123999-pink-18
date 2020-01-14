@@ -1,11 +1,17 @@
 .social-buttons {
   display: flex;
+  margin-right: 20px;
+  margin-top: 3px;
+  margin-left: 23px;
 }
 
 .social-buttons__link {
   display: flex;
-  width: 46px;
-  height: 46px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  margin-right: 12px;
 
   &--twitter {
     background: url("../img/icon-twitter.svg") no-repeat 50% 50%;
@@ -17,5 +23,21 @@
 
   &--youtube {
     background: url("../img/icon-youtube.svg") no-repeat 50% 50%;
+  }
+
+  &--last {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social-buttons {
+    margin-left: 2px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-buttons {
+    margin-left: 35px;
   }
 }

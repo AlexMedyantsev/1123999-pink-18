@@ -11,14 +11,10 @@
 .price-table__header {
   background-color: #283645;
   border-left: solid 2px #e5e5e5;
+}
 
-  &--left-side {
-    display: none;
-  }
-
-  &:first-of-type {
-    border-left: none;
-  }
+.price-table__header:first-of-type {
+  border-left: none;
 }
 
 .price-table__title {
@@ -44,53 +40,14 @@
   text-align: left;
   text-transform: uppercase;
   color: #283645;
-
-  &--left-side {
-    display: none;
-  }
 }
 
 .price-table__cell {
   background-color: white;
   border: solid 2px #e5e5e5;
-
-  &--left-side {
-    display: none;
-  }
 }
 
 .price__toggles {
   margin: 0 auto;
   margin-top: 45px;
-}
-
-@media (min-width: $tablet-width) {
-  .price-table__cell {
-    background-color: white;
-    border: solid 2px #e5e5e5;
-    width: 156px;
-    height: 49px;
-
-    &--left-side {
-      display: block;
-      border-right: none;
-      border-top: none;
-      height: 50px;
-    }
-
-    &--first {
-      border-top: 1px solid #e5e5e5;
-    }
-  }
-
-  .price-table__header {
-    width: 156px;
-    height: 79px;
-
-    &--left-side {
-      display: block;
-      height: 78px;
-      opacity: 0;
-    }
-  }
 }

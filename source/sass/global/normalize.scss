@@ -41,7 +41,10 @@ article,
 section,
 ul,
 blockquote,
-cite {
+cite,
+legend,
+fieldset,
+input {
   margin: 0;
   padding: 0;
   padding-inline-start: 0;
@@ -167,14 +170,6 @@ button:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
-}
-
-/**
- * Correct the padding in Firefox.
- */
-
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
 }
 
 /**
