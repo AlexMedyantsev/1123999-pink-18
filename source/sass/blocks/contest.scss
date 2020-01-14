@@ -201,7 +201,7 @@
 // Submit
 
 .contest__submit {
-  padding-bottom: 16px; 
+  padding-bottom: 16px;
 }
 
 .contest__submit-button {
@@ -407,7 +407,7 @@
       margin: 0 auto;
     }
   }
-  
+
   .contest__form {
     display: flex;
     flex-direction: column;
@@ -422,7 +422,7 @@
     padding-left: 20px;
     order: 1;
   }
-  
+
   .contest__name-item {
     display: flex;
     align-items: center;
@@ -461,7 +461,7 @@
   }
 
   .contest__app-item:last-child {
-    margin-bottom: 0; 
+    margin-bottom: 0;
   }
 
 // Contacts
@@ -470,7 +470,7 @@
     order: 3;
     padding-top: 41px;
     padding-bottom: 19px;
-  } 
+  }
 
   .contest__contacts-legend {
     display: block;
@@ -478,12 +478,12 @@
     padding-left: 32px;
     padding-right: 32px;
   }
-  
+
   .contest__contacts-list {
     margin: 0 auto;
     width: auto;
   }
-  
+
   .contest__contacts-item {
     width: 500px;
     margin: 0 auto;
@@ -504,7 +504,7 @@
       z-index: 10;
     }
   }
-  
+
   .contest__contacts-item {
     &--phone::after{
       background: #e5e5e5 url("../img/icon-phone.svg") no-repeat center;
@@ -544,7 +544,7 @@
 
   .contest__achievements-label {
     width: 500px;
-  } 
+  }
 
   .contest__achievements-legend {
     top: 0;
@@ -614,7 +614,7 @@
     }
   }
 
-// Name 
+// Name
 
   .contest__name {
     width: 435px;
@@ -701,27 +701,27 @@
       order: 1;
     }
 
-     &--chuck{
+    &--chuck{
       order: 2;
     }
 
-     &--tower {
+    &--tower {
       order: 3;
     }
 
-     &--beach {
+    &--beach {
       order: 4;
     }
 
-     &--souvenirs {
+    &--souvenirs {
       order: 5;
     }
 
-     &--hotel {
+    &--hotel {
       order: 6;
     }
   }
-  
+
 // Comment
 
   .contest__comment {

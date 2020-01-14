@@ -5,7 +5,7 @@
   background-size: 660px 460px;
   background-position: 50% 0;
   min-height: 600px;
-  
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-tablet@2x.jpg");
   }
