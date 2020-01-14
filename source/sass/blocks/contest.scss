@@ -37,10 +37,6 @@
   padding-bottom: 44px;
 }
 
-.contest__name-list {
-
-}
-
 .contest__name-item {
   width: 276px;
   margin: 0 auto;
@@ -168,6 +164,7 @@
   width: 276px;
   margin: 0 auto;
 }
+
 .contest__app-item {
   height: 36px;
   margin-bottom: 39px;
@@ -187,15 +184,6 @@
 .contest__comment {
   padding-top: 71px;
   padding-bottom: 46px;
-}
-
-.contest__comment-text {
-  width: 280px;
-  height: 202px;
-  padding-top: 15px;
-  padding-left: 17px;
-  margin: 0 auto;
-  display: block;
 }
 
 // Submit
@@ -298,7 +286,7 @@
 
 
 .contest__checkbox + label::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -5px;
   left: 0;
@@ -369,6 +357,12 @@
 }
 
 .contest__comment-text {
+  width: 280px;
+  height: 202px;
+  padding-top: 15px;
+  padding-left: 17px;
+  margin: 0 auto;
+  display: block;
   font-size: 18px;
   font-weight: normal;
   line-height: 1.67;
@@ -377,7 +371,7 @@
   resize: none;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .contest__fieldset--small-border {
     border: 2px solid #e5e5e5;
     width: 620px;
@@ -464,7 +458,7 @@
     margin-bottom: 0;
   }
 
-// Contacts
+  // Contacts
 
   .contest__contacts {
     order: 3;
@@ -503,14 +497,12 @@
       background-size: 20px 19px;
       z-index: 10;
     }
-  }
 
-  .contest__contacts-item {
-    &--phone::after{
+    &--phone::after {
       background: #e5e5e5 url("../img/icon-phone.svg") no-repeat center;
     }
 
-    &--mail::after{
+    &--mail::after {
       background: #e5e5e5 url("../img/icon-mail.svg") no-repeat center;
     }
   }
@@ -528,7 +520,8 @@
     margin-bottom: 10px;
     order: 1;
   }
-// Achievements
+
+  // Achievements
 
   .contest__achievements {
     order: 4;
@@ -554,10 +547,7 @@
     margin: 0;
   }
 
-  .contest__achievements-item {
-  }
-
-// Comment
+  // Comment
 
   .contest__comment {
     order: 5;
@@ -572,7 +562,8 @@
     padding-left: 20px;
   }
 
-// Submit
+  // Submit
+
   .contest__submit {
     order: 6;
     display: flex;
@@ -614,7 +605,7 @@
     }
   }
 
-// Name
+  // Name
 
   .contest__name {
     width: 435px;
@@ -625,20 +616,11 @@
     margin: 0;
   }
 
-  .contest__name-list {
-  }
-
   .contest__name-item {
     width: 435px;
   }
 
-  .contest__name-input {
-  }
-
-  .contest__name-label {
-  }
-
-// App
+  // App
 
   .contest__app {
     width: 435px;
@@ -653,7 +635,7 @@
     width: 370px;
   }
 
-// Contacts
+  // Contacts
 
   .contest__contacts {
     width: 100%;
@@ -677,14 +659,13 @@
     width: 375px;
   }
 
-// Achievements
+  // Achievements
 
   .contest__achievements {
     width: 100%;
     margin-top: 52px;
     padding-top: 48px;
     padding-left: 60px;
-    // padding-right: 60px;
   }
 
   .contest__achievements-list {
@@ -701,7 +682,7 @@
       order: 1;
     }
 
-    &--chuck{
+    &--chuck {
       order: 2;
     }
 
@@ -722,7 +703,7 @@
     }
   }
 
-// Comment
+  // Comment
 
   .contest__comment {
     width: 100%;
