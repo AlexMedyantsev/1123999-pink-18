@@ -382,7 +382,6 @@
   .contest__legend {
     position: relative;
     width: auto;
-    margin: 0;
     padding-left: 25px;
     padding-right: 25px;
     height: 10px;
@@ -533,10 +532,6 @@
 
   .contest__checkbox + label {
     padding-left: 60px;
-  }
-
-  .contest__achievements-label {
-    width: 500px;
   }
 
   .contest__achievements-legend {
