@@ -35,7 +35,8 @@
     </header>
     <main class="page-main">
       <section class="contest">
-        <p class="contest__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <p class="contest__title contest__title--hidden">Пожалуйста, заполните форму ниже:</p></p>
+        <p class="contest__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <div class="contest__title contest__title--hidden">Пожалуйста, заполните форму ниже:</div></p>
+        <p class="contest__title--long">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
         <form class="contest__form">
           <!-- Инициалы -->
           <fieldset class="contest__name contest__fieldset">
@@ -58,27 +59,27 @@
           <fieldset class="contest__achievements contest__fieldset contest__fieldset--small-border">
             <legend class="contest__achievements-legend contest__legend contest__legend--inside">Ваши безбашенные достижения в путешествии</legend>
             <ul class="contest__achievements-list">
-              <li class="contest__achievements-item">
+              <li class="contest__achievements-item contest__achievements-item--shark">
                 <input class="contest__achievements-input contest__checkbox input" type="checkbox" name="achivement" id="shark-selfie" value="shark-selfie" checked>
                 <label class="contest__achievements-label" for="shark-selfie">Сделал селфи с акулой</label>
               </li>
-              <li class="contest__achievements-item">
+              <li class="contest__achievements-item contest__achievements-item--beach">
                 <input class="contest__achievements-input contest__checkbox input" type="checkbox" name="achivement" id="beach-burned" value="beach-burned" checked>
                 <label class="contest__achievements-label" for="beach-burned">Обгорел на пляже</label>
               </li>
-              <li class="contest__achievements-item">
+              <li class="contest__achievements-item contest__achievements-item--chuck">
                 <input class="contest__achievements-input contest__checkbox input" type="checkbox" name="achivement" id="saw-chuck-norris" value="saw-chuck-norris">
                 <label class="contest__achievements-label" for="saw-chuck-norris">Видел Чака Норриса</label>
               </li>
-              <li class="contest__achievements-item">
+              <li class="contest__achievements-item contest__achievements-item--souvenirs">
                 <input class="contest__achievements-input contest__checkbox input" type="checkbox" name="achivement" id="bought-souvenirs" value="bought-souvenirs">
                 <label class="contest__achievements-label" for="bought-souvenirs">Накупил сувениров</label>
               </li>
-              <li class="contest__achievements-item">
+              <li class="contest__achievements-item contest__achievements-item--tower">
                 <input class="contest__achievements-input contest__checkbox input" type="checkbox" name="achivement" id="hold-the-tower" value="hold-the-tower" checked>
                 <label class="contest__achievements-label" for="hold-the-tower">Удержал башню</label>
               </li>
-              <li class="contest__achievements-item">
+              <li class="contest__achievements-item contest__achievements-item--hotel">
                 <input class="contest__achievements-input contest__checkbox input" type="checkbox" name="achivement" id="busted-the-hotel" value="busted-the-hotel">
                 <label class="contest__achievements-label" for="busted-the-hotel">Разгромил отель</label>
               </li>
@@ -87,11 +88,11 @@
           <fieldset class="contest__contacts contest__fieldset contest__fieldset--small-border">
             <legend class="contest__legend contest__contacts-legend">Контактная информация</legend>
             <ul class="contest__contacts-list">
-              <li class="contest__contacts-item">
+              <li class="contest__contacts-item contest__contacts-item--phone">
                 <label class="contest__contacts-label" for="phone">Номер телефона</label>
                 <input class="contest__contacts-input input" type="tel" id="phone" aria-label="Введите номер телефона" placeholder="Номер, пожалуйста">
               </li>
-              <li class="contest__contacts-item">
+              <li class="contest__contacts-item contest__contacts-item--mail">
                 <label class="contest__contacts-label" for="email">Адрес почты</label>
                 <input class="contest__contacts-input input" type="email" id="email" aria-label="Введите почту" placeholder="Введите почту *" required>
               </li>
@@ -122,7 +123,7 @@
           <div class="contest__submit">
             <button class="contest__submit-button" type="submit">Отправить форму</button>
             <div class="contest__submit-required-wrapper">
-              <span class="contest__submit-required"><span class="contest__submit-required--star">*</span> — обязательные поля</span>
+              <span class="contest__submit-required"><span class="contest__submit-required--star">*</span> — обязательные <span class="contest__submit-required--add">для заполнения</span> поля</span>
             </div>
           </div>
         </form>

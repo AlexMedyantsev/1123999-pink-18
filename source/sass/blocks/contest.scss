@@ -11,6 +11,17 @@
   &--hidden {
     display: none;
   }
+
+  &--long {
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 46px;
+    margin-bottom: 36px;
+    line-height: 30px;
+    display: none;
+  }
 }
 
 .contest__fieldset {
@@ -222,6 +233,10 @@
 
   &--star {
     color: $pink;
+  }
+
+  &--add {
+    display: none;
   }
 }
 // Радио кнопка
@@ -486,8 +501,17 @@
       width: 60px;
       height: 59px;
       background-size: 20px 19px;
-      background: #e5e5e5 url("../img/icon-phone.svg") no-repeat center;
       z-index: 10;
+    }
+  }
+  
+  .contest__contacts-item {
+    &--phone::after{
+      background: #e5e5e5 url("../img/icon-phone.svg") no-repeat center;
+    }
+
+    &--mail::after{
+      background: #e5e5e5 url("../img/icon-mail.svg") no-repeat center;
     }
   }
 
@@ -567,5 +591,159 @@
 
   .contest__submit-required {
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest__form {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .contest__title {
+    display: none;
+
+    &--long {
+      width: 760px;
+      display: block;
+      margin-top: 93px;
+      margin-bottom: 85px;
+    }
+  }
+
+// Name 
+
+  .contest__name {
+    width: 435px;
+  }
+
+  .contest__fieldset {
+    padding: 0;
+    margin: 0;
+  }
+
+  .contest__name-list {
+  }
+
+  .contest__name-item {
+    width: 435px;
+  }
+
+  .contest__name-input {
+  }
+
+  .contest__name-label {
+  }
+
+// App
+
+  .contest__app {
+    width: 435px;
+    margin-top: -8px;
+    padding-top: 19px;
+    padding-left: 73.5px;
+    min-height: 301px;
+  }
+
+  .contest__app-legend {
+    // padding: 0;
+    width: 370px;
+  }
+
+// Contacts
+
+  .contest__contacts {
+    width: 100%;
+    margin-top: 60px;
+    padding-top: 44px;
+    padding-bottom: 11px;
+  }
+
+  .contest__contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contest__contacts-item {
+    width: 375px;
+    margin: 0;
+  }
+
+  .contest__contacts-input {
+    width: 375px;
+  }
+
+// Achievements
+
+  .contest__achievements {
+    width: 100%;
+    margin-top: 52px;
+    padding-top: 48px;
+    padding-left: 60px;
+    // padding-right: 60px;
+  }
+
+  .contest__achievements-list {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contest__achievements-item {
+    width: 270px;
+    margin-left: 15px;
+
+    &--shark {
+      order: 1;
+    }
+
+     &--chuck{
+      order: 2;
+    }
+
+     &--tower {
+      order: 3;
+    }
+
+     &--beach {
+      order: 4;
+    }
+
+     &--souvenirs {
+      order: 5;
+    }
+
+     &--hotel {
+      order: 6;
+    }
+  }
+  
+// Comment
+
+  .contest__comment {
+    width: 100%;
+    height: 213px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-top: 28px;
+  }
+
+  .contest__comment-text {
+    width: 820px;
+    height: 128px;
+  }
+
+  .contest__submit {
+    width: 940px;
+  }
+
+  .contest__submit-required {
+    &--add {
+      display: inline;
+    }
   }
 }
