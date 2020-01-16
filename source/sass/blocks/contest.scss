@@ -531,7 +531,7 @@
   }
 
   .contest__checkbox + label {
-    padding-left: 60px;
+    padding-left: 56px;
   }
 
   .contest__achievements-legend {
@@ -618,11 +618,11 @@
   // App
 
   .contest__app {
-    width: 435px;
-    margin-top: -8px;
-    padding-top: 19px;
-    padding-left: 73.5px;
-    min-height: 301px;
+    width: 434px;
+    margin-top: -14px;
+    margin-left: 10px;
+    padding-top: 51px;
+    min-height: 311px;
   }
 
   .contest__app-legend {
@@ -630,24 +630,37 @@
     width: 370px;
   }
 
+  .contest__app-list {
+    margin-left: 74px;
+  }
+
+  .contest__app-item {
+    margin-bottom: 37px;
+  }
+
   // Contacts
 
   .contest__contacts {
     width: 100%;
     margin-top: 60px;
-    padding-top: 44px;
+    padding-top: 37px;
+    padding-right: 58px;
     padding-bottom: 11px;
+    padding-left: 58px;
   }
 
   .contest__contacts-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
   }
 
   .contest__contacts-item {
     width: 375px;
     margin: 0;
+
+    &:nth-of-type(2n + 2) {
+      margin-left: 70px;
+    }
   }
 
   .contest__contacts-input {
@@ -659,7 +672,8 @@
   .contest__achievements {
     width: 100%;
     margin-top: 52px;
-    padding-top: 48px;
+    padding-top: 52px;
+    padding-bottom: 6px;
     padding-left: 60px;
   }
 
@@ -670,11 +684,12 @@
   }
 
   .contest__achievements-item {
-    width: 270px;
-    margin-left: 15px;
+    width: 260px;
+    margin-left: 57px;
 
     &--shark {
       order: 1;
+      margin: 0;
     }
 
     &--chuck {
@@ -683,10 +698,13 @@
 
     &--tower {
       order: 3;
+      width: 240px;
+      margin-left: 33px;
     }
 
     &--beach {
       order: 4;
+      margin: 0;
     }
 
     &--souvenirs {
@@ -695,17 +713,22 @@
 
     &--hotel {
       order: 6;
+      width: 240px;
+      margin-left: 33px;
     }
   }
 
+  label {
+    display: inline-block;
+  }
   // Comment
 
   .contest__comment {
     width: 100%;
-    height: 213px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    padding-top: 28px;
+    margin-top: 57px;
+    margin-bottom: 64px;
+    padding-top: 33px;
+    padding-bottom: 45px;
   }
 
   .contest__comment-text {
@@ -713,8 +736,11 @@
     height: 128px;
   }
 
+  // Submit
+
   .contest__submit {
     width: 940px;
+    margin-bottom: 35px;
   }
 
   .contest__submit-required {
