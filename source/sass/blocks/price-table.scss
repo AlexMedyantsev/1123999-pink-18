@@ -164,13 +164,13 @@
     position: relative;
     margin-left: -308px;
   }
-  
+
   .price-table__header {
     width: 155px;
     height: 76px;
     border: 2px solid #283645;
     border-right: 2px solid white;
-    
+
     &:last-of-type {
       border-right: 2px solid #283645;
     }
@@ -193,7 +193,7 @@
       }
     }
   }
-  
+
   .price-table__title {
     font-size: 16px;
   }
@@ -300,7 +300,7 @@
 
   .price-table__cell {
     height: 61px;
-    
+
     &--left-side {
       padding-left: 20px;
     }
@@ -309,7 +309,7 @@
       &::before {
         top: 20px;
         right: 98px;
-      } 
+      }
     }
 
     &--non-available {
@@ -318,7 +318,7 @@
         height: 26px;
         top: 17px;
         right: 102px;
-      } 
+      }
     }
   }
 
