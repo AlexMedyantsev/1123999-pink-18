@@ -13,7 +13,7 @@
           <div class="main-nav__logo-wrapper">
             <a class="main-nav__logo-link">
             </a>
-            <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
+            <button class="main-nav__toggle main-nav__toggle--no-js" type="button" aria-label="Меню"></button>
           </div>
           <ul class="main-menu main-menu--closed">
             <li class="main-menu__item">
@@ -242,5 +242,52 @@
         </span>
       </div>
     </footer>
+    <noscript src="">
+      <style type="text/css">
+        .main-menu--closed {
+          display: block;
+        }
+
+        .main-nav__toggle--no-js {
+          display: none;
+        }
+        
+        .page-header__nav-wrapper--transparent {
+          background-color: #283645;
+        }
+        @media (max-width: 660px) {
+          .page-header {
+            height: 1000px;
+            background-position: 50% 268px;
+          }
+
+          .download {
+            margin-top: 20px;
+          }
+        }
+
+        @media (min-width: $tablet-width) {
+          .page-header {
+            min-height: 940px;
+            background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+            background-position: 50% 250px;
+          }
+        }
+        
+        .download {
+          margin-top: 260px;
+        }
+
+        @media (min-width: 960px) {
+          .main-menu {
+            display: flex;
+          }
+
+          .download {
+            margin-top: 0;
+          }
+        }
+      </style>
+    </noscript>
   </body>
 </html>
