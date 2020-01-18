@@ -53,7 +53,7 @@
 @media (min-width: $tablet-width) {
   .reviews {
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 19px;
   }
 
   .reviews__item {
@@ -93,6 +93,7 @@
   .reviews {
     background: url("../img/icon-quotes.svg") no-repeat 50% 72px;
     padding-top: 193px;
+    padding-bottom: 0;
     width: 960px;
     margin: 0 auto;
     position: relative;
