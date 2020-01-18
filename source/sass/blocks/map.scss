@@ -36,16 +36,16 @@
 
 @media (min-width: $tablet-width) {
   .map {
-    height: 360px;
+    height: 373px;
 
     &::before {
-      height: 85px;
-      background-size: 960px 85px;
+      height: 67px;
+      background-size: 100% 67px;
     }
   }
 
   .map__interactive {
-    height: 383px;
+    height: 373px;
   }
 
   .map__image {
