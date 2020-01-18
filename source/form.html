@@ -13,7 +13,7 @@
           <div class="main-nav__logo-wrapper">
             <a class="main-nav__logo-link" href="index.html">
             </a>
-            <button class="main-nav__toggle" type="button" aria-label="Меню"></button>
+            <button class="main-nav__toggle main-nav__toggle--no-js" type="button" aria-label="Меню"></button>
           </div>
           <ul class="main-menu main-menu--closed">
             <li class="main-menu__item">
@@ -168,38 +168,31 @@
     </div>
     <noscript>
       <style type="text/css">
-        .main-menu--closed {
+         .main-menu--closed {
           display: block;
+          position: relative;
         }
 
         .main-nav__toggle--no-js {
           display: none;
         }
 
-        .page-header__nav-wrapper--transparent {
-          background-color: #283645;
+        .main-nav__logo-wrapper {
+          border-bottom: 1px solid $pink;
         }
 
         @media (max-width: 660px) {
           .page-header {
-            height: 498px;
-            background-position: 50% 268px;
-          }
-
-          .page-header__title--form {
-            margin-top: 287px;
+            background-position: 50% 278px;
+            padding-bottom: 53px;
           }
         }
 
         @media (min-width: 660px) and (max-width: 960px) {
           .page-header {
-            min-height: 691px;
             background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
             background-position: 50% 250px;
-          }
-
-          .page-header__title--form {
-            margin-top: 323px;
+            padding-bottom: 0;
           }
         }
 
@@ -207,13 +200,11 @@
           .main-menu {
             display: flex;
           }
+        }
 
-          .page-header__title--form {
-            margin-top: 64px;
-          }
-
-          .page-header {
-            height: 108px;
+        @media (max-width: 960px) {
+          .page-header__nav-wrapper--transparent {
+            background-color: #283645;
           }
         }
       </style>

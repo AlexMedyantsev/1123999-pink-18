@@ -246,45 +246,39 @@
       <style type="text/css">
         .main-menu--closed {
           display: block;
+          position: relative;
         }
 
         .main-nav__toggle--no-js {
           display: none;
         }
 
-        .page-header__nav-wrapper--transparent {
-          background-color: #283645;
+        .main-nav__logo-wrapper {
+          border-bottom: 1px solid $pink;
         }
+
         @media (max-width: 660px) {
           .page-header {
-            height: 1000px;
             background-position: 50% 268px;
-          }
-
-          .download {
-            margin-top: 20px;
           }
         }
 
-        @media (min-width: $tablet-width) {
+        @media (min-width: 660px) and (max-width: 960px) {
           .page-header {
-            min-height: 940px;
             background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
             background-position: 50% 250px;
           }
-        }
-
-        .download {
-          margin-top: 260px;
         }
 
         @media (min-width: 960px) {
           .main-menu {
             display: flex;
           }
+        }
 
-          .download {
-            margin-top: 0;
+        @media (max-width: 960px) {
+          .page-header__nav-wrapper--transparent {
+            background-color: #283645;
           }
         }
       </style>
