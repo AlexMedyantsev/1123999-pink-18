@@ -75,7 +75,7 @@
 // Achievements
 
 .contest__achievements {
-  background-color: #f2f2f2;
+  background-color: $light-gray;
   padding-top: 115px;
   padding-bottom: 42px;
 }
@@ -83,7 +83,7 @@
 .contest__achievements-label {
   font-size: 18px;
   font-weight: normal;
-  color: #283645;
+  color: $dark;
   line-height: 1.67;
   text-align: left;
   display: block;
@@ -133,7 +133,7 @@
   line-height: 2.14;
   text-align: left;
   text-transform: uppercase;
-  color: #d22856;
+  color: $pink;
   display: block;
   padding-bottom: 5px;
   margin-left: 21px;
@@ -156,7 +156,7 @@
 // App
 
 .contest__app {
-  background-color: #f2f2f2;
+  background-color: $light-gray;
   padding-top: 115px;
 }
 
@@ -173,7 +173,7 @@
 .contest__app-label {
   font-size: 18px;
   font-weight: normal;
-  color: #283645;
+  color: $dark;
   line-height: 1.67;
   text-align: left;
   display: block;
@@ -198,7 +198,7 @@
   height: 63px;
   margin: 0 auto;
   margin-bottom: 34px;
-  background-color: #2aab6d;
+  background-color: $green;
   border: 0;
   border-radius: 2px;
   color: white;
@@ -213,7 +213,7 @@
   font-size: 14px;
   font-weight: normal;
   line-height: 2.14;
-  color: #283645;
+  color: $dark;
   text-align: center;
   display: block;
   margin: 0 auto;
@@ -249,7 +249,7 @@
   width: 39px;
   height: 39px;
   background: white;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $white-four;
   border-radius: 50%;
 }
 
@@ -261,7 +261,7 @@
   width: 39px;
   height: 39px;
   background: white;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $white-four;
   border-radius: 50%;
 }
 
@@ -292,7 +292,7 @@
   left: 0;
   width: 37px;
   height: 37px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $white-four;
   border-radius: 3px;
   background: white;
 }
@@ -304,7 +304,7 @@
   left: 0;
   width: 37px;
   height: 37px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $white-four;
   border-radius: 3px;
 }
 
@@ -318,7 +318,7 @@
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  color: #d22856;
+  color: $pink;
   margin: 0 auto;
   width: 225px;
 
@@ -334,20 +334,20 @@
 }
 
 .input {
-  color: #283645;
+  color: $dark;
   line-height: 2.14;
   font-weight: normal;
   font-size: 14px;
   text-align: center;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $white-four;
   border-radius: 2px;
 
   &:hover {
-    border: 2px solid #283645;
+    border: 2px solid $dark;
   }
 
   &:focus {
-    border: 2px solid #d22856;
+    border: 2px solid $pink;
     outline: none;
   }
 
@@ -367,13 +367,13 @@
   font-weight: normal;
   line-height: 1.67;
   text-align: left;
-  color: #283645;
+  color: $dark;
   resize: none;
 }
 
 @media (min-width: $tablet-width) {
   .contest__fieldset--small-border {
-    border: 2px solid #e5e5e5;
+    border: 2px solid $white-four;
     width: 620px;
     margin: 0 auto;
     margin-bottom: 60px;
@@ -498,11 +498,11 @@
     }
 
     &--phone::after {
-      background: #e5e5e5 url("../img/icon-phone.svg") no-repeat center;
+      background: $white-four url("../img/icon-phone.svg") no-repeat center;
     }
 
     &--mail::after {
-      background: #e5e5e5 url("../img/icon-mail.svg") no-repeat center;
+      background: $white-four url("../img/icon-mail.svg") no-repeat center;
     }
   }
 
@@ -531,7 +531,7 @@
   }
 
   .contest__checkbox + label {
-    padding-left: 60px;
+    padding-left: 56px;
   }
 
   .contest__achievements-legend {
@@ -618,11 +618,11 @@
   // App
 
   .contest__app {
-    width: 435px;
-    margin-top: -8px;
-    padding-top: 19px;
-    padding-left: 73.5px;
-    min-height: 301px;
+    width: 434px;
+    margin-top: -14px;
+    margin-left: 10px;
+    padding-top: 51px;
+    min-height: 311px;
   }
 
   .contest__app-legend {
@@ -630,24 +630,37 @@
     width: 370px;
   }
 
+  .contest__app-list {
+    margin-left: 74px;
+  }
+
+  .contest__app-item {
+    margin-bottom: 37px;
+  }
+
   // Contacts
 
   .contest__contacts {
     width: 100%;
     margin-top: 60px;
-    padding-top: 44px;
+    padding-top: 37px;
+    padding-right: 58px;
     padding-bottom: 11px;
+    padding-left: 58px;
   }
 
   .contest__contacts-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
   }
 
   .contest__contacts-item {
     width: 375px;
     margin: 0;
+
+    &:nth-of-type(2n + 2) {
+      margin-left: 70px;
+    }
   }
 
   .contest__contacts-input {
@@ -659,7 +672,8 @@
   .contest__achievements {
     width: 100%;
     margin-top: 52px;
-    padding-top: 48px;
+    padding-top: 52px;
+    padding-bottom: 6px;
     padding-left: 60px;
   }
 
@@ -670,11 +684,12 @@
   }
 
   .contest__achievements-item {
-    width: 270px;
-    margin-left: 15px;
+    width: 260px;
+    margin-left: 57px;
 
     &--shark {
       order: 1;
+      margin: 0;
     }
 
     &--chuck {
@@ -683,10 +698,13 @@
 
     &--tower {
       order: 3;
+      width: 240px;
+      margin-left: 33px;
     }
 
     &--beach {
       order: 4;
+      margin: 0;
     }
 
     &--souvenirs {
@@ -695,17 +713,22 @@
 
     &--hotel {
       order: 6;
+      width: 240px;
+      margin-left: 33px;
     }
   }
 
+  label {
+    display: inline-block;
+  }
   // Comment
 
   .contest__comment {
     width: 100%;
-    height: 213px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    padding-top: 28px;
+    margin-top: 57px;
+    margin-bottom: 64px;
+    padding-top: 33px;
+    padding-bottom: 45px;
   }
 
   .contest__comment-text {
@@ -713,8 +736,11 @@
     height: 128px;
   }
 
+  // Submit
+
   .contest__submit {
     width: 940px;
+    margin-bottom: 35px;
   }
 
   .contest__submit-required {

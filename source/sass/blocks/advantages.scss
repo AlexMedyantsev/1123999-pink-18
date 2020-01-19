@@ -132,8 +132,12 @@
     background-image: none;
   }
 
+  .advantages__br {
+    display: block;
+  }
+
   .advantages__promos {
-    padding-top: 57px;
+    padding-top: 53px;
     padding-bottom: 47px;
   }
 
@@ -266,7 +270,7 @@
 
 // Desktop
 @media (min-width: $desktop-width) {
-  .br {
+  .advantages__br {
     display: none;
   }
 

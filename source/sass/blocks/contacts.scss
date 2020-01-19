@@ -23,7 +23,7 @@
 }
 
 .contacts__wrapper {
-  margin-top: 25px;
+  margin-top: 22px;
 
   &:nth-of-type(1) {
     margin-top: 0;
@@ -59,6 +59,7 @@
 @media (min-width: $tablet-width) {
   .contacts {
     padding-top: 46px;
+    min-height: 407px;
   }
 
   .contacts__container {
@@ -95,6 +96,7 @@
 @media (min-width: $desktop-width) {
   .contacts {
     padding-top: 65px;
+    min-height: 369px;
   }
 
   .contacts__title {
