@@ -106,7 +106,7 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "sprite",
-  "html" 
+  "html"
 ));
 
 gulp.task("build", gulp.series("css", "sprite", "html"));
