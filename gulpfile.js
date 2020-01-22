@@ -93,7 +93,7 @@ gulp.task("copy", function () {
       "source/*.ico"
     ], {
       base: "source"
-})
+    })
     .pipe(gulp.dest("build"));
 });
 
@@ -111,4 +111,3 @@ gulp.task("build", gulp.series(
 
 gulp.task("build", gulp.series("css", "sprite", "html"));
 gulp.task("start", gulp.series("css", "server"));
-gulp.task("start", gulp.series("build", "server"));
