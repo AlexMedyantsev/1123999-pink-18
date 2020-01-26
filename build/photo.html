@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="page-header page-header--photo">
+      <div class="page-header__nav-wrapper page-header__nav-wrapper--transparent">
+        <nav class="page-header__main-nav main-nav">
+          <div class="main-nav__logo-wrapper">
+            <a class="main-nav__logo-link" href="index.html">
+            </a>
+            <button class="main-nav__toggle main-nav__toggle--no-js" type="button" aria-label="Меню"></button>
+          </div>
+          <ul class="main-menu main-menu--closed">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link main-menu__link--active" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h1 class="page-header__title page-header__title--photo">Фотографии пользователей</h1>
+    </header>
+    <main class="page-main">
+      <section class="photo-blog">
+        <div class="photo-blog__title-container">
+          <h2 class="photo-blog__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+        </div>
+        <article class="panorama-best">
+          <div class="panorama-best__image-wrapper">
+            <picture class="panorama-best__image-picture">
+              <source media="(min-width: 960px)" srcset="../img/panorama-desktop@1x.jpg 1x, ../img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="../img/panorama-tablet@1x.jpg 1x, ../img/panorama-tablet@2x.jpg 2x">
+              <img class="panorama-best__image" srcset="../img/panorama-mobile@1x.jpg 1x, ../img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+            </picture>
+          </div>
+          <div class="panorama-best__comment">
+            <b class="panorama-best__author post__author">Анна</b>
+            <span class=" panorama-best__date post__date"><span class="panorama-best__bracket post__bracket">(</span>5 минут назад)</span>
+            <p class="panorama-best__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <span class="panorama-best__likes">Нравится: 215</span>
+          </div>
+        </article>
+        <div class="post">
+          <article class="post__article">
+            <picture>
+              <source media="(min-width:960px)" srcset="../img/photo-car-desktop@1x.jpg 1x, ../img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="../img/photo-car-tablet@1x.jpg 1x, ../img/photo-car-tablet@2x.jpg 2x">
+              <img class="post__image" srcset="../img/photo-car-mobile@1x 1x, ../img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+            </picture>
+            <div class="post__comment">
+              <p class="post__author-container">
+              <b class="post__author">Левон</b>
+                <span class="post__date"><span class="post__bracket">(</span>5 часов назад)</span>
+                </p><p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p></p>
+              <span class="post__likes">Нравится: 356</span>
+            </div>
+          </article>
+          <article class="post__article">
+            <picture>
+              <source media="(min-width:960px)" srcset="../img/photo-drumset-desktop@1x.jpg 1x, ../img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="../img/photo-drumset-tablet@1x.jpg 1x, ../img/photo-drumset-tablet@2x.jpg 2x">
+              <img class="post__image" srcset="../img/photo-drumset-mobile@1x 1x, ../img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+            </picture>
+            <div class="post__comment">
+              <p class="post__author-container">
+                <b class="post__author">Антон</b>
+                <span class="post__date"><span class="post__bracket">(</span>12 часов назад)</span>
+              </p>
+              <p class="post__text post__text--short">Соседи будут рады!</p>
+              <span class="post__likes">Нравится: 666</span>
+            </div>
+          </article>
+          <article class="post__article">
+            <picture>
+              <source media="(min-width:960px)" srcset="../img/photo-window-desktop@1x.jpg 1x, ../img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="../img/photo-window-tablet@1x.jpg 1x, ../img/photo-window-tablet@2x.jpg 2x">
+              <img class="post__image" srcset="../img/photo-window-mobile@1x 1x, ../img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+            </picture>
+            <div class="post__comment">
+              <p class="post__author-container">
+                <b class="post__author">Борис</b>
+                <span class="post__date"><span class="post__bracket">(</span>20 часов назад)</span>
+              </p>
+              <p class="post__text post__text--short">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <span class="post__likes">Нравится: 215</span>
+            </div>
+          </article>
+          <article class="post__article">
+            <picture>
+              <source media="(min-width:960px)" srcset="../img/photo-fair-desktop@1x.jpg 1x, ../img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="../img/photo-fair-tablet@1x.jpg 1x, ../img/photo-fair-tablet@2x.jpg 2x">
+              <img class="post__image" srcset="../img/photo-fair-mobile@1x 1x, ../img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+            </picture>
+            <div class="post__comment">
+              <p class="post__author-container">
+                <b class="post__author">Сергей</b>
+                <span class="post__date"><span class="post__bracket">(</span>25 часов назад)</span>
+              </p>
+              <p class="post__text post__text--medium">Самая кубанская в мире!</p>
+              <span class="post__likes">Нравится: 4</span>
+            </div>
+          </article>
+          <article class="post__article">
+            <picture>
+              <source media="(min-width:960px)" srcset="../img/photo-pov-desktop@1x.jpg 1x, ../img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="../img/photo-pov-tablet@1x.jpg 1x, ../img/photo-pov-tablet@2x.jpg 2x">
+              <img class="post__image" srcset="../img/photo-pov-mobile@1x 1x, ../img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+            </picture>
+            <div class="post__comment">
+              <p class="post__author-container">
+                <b class="post__author">Максим</b>
+                <span class="post__date"><span class="post__bracket">(</span>40 часов назад)</span>
+              </p>
+              <p class="post__text post__text--medium">Где снег-то?</p>
+              <span class="post__likes">Нравится: 150</span>
+            </div>
+          </article>
+          <article class="post__article">
+            <picture>
+              <source media="(min-width:960px)" srcset="../img/photo-wing-desktop@1x.jpg 1x, ../img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="../img/photo-wing-tablet@1x.jpg 1x, ../img/photo-wing-tablet@2x.jpg 2x">
+              <img class="post__image" srcset="../img/photo-wing-mobile@1x 1x, ../img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+            </picture>
+            <div class="post__comment">
+              <p class="post__author-container">
+                <b class="post__author">Надежда</b>
+                <span class="post__date"><span class="post__bracket">(</span>45 часов назад)</span>
+              </p>
+              <p class="post__text post__text--medium">Всем GM и взаимные лайки!</p>
+              <span class="post__likes">Нравится: 2560</span>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="publish">
+        <h2 class="publish__title">Затмите их всех!<br> Выкладывайте все, что накопилось в<br class="br"> телефоне!</h2>
+        <form class="publish__form">
+          <div class="publish__wrapper">
+            <div class="publish__container">
+              <picture class="publish__picture">
+                <source media="(min-width:960px)" srcset="../img/photo-road-desktop@1x.jpg 1x, ../img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width:660px)" srcset="../img/photo-road-tablet@1x.jpg 1x, ../img/photo-road-tablet@2x.jpg 2x">
+                <img class="publish__image" srcset="../img/photo-road-mobile@1x 1x, ../img/photo-road-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+              </picture>
+              <div class="publish__settings">
+                <div class="publish__filters">
+                  <div class="publish__tools-buttons">
+                    <input type="radio" class="publish__input publish__input--crop" id="publish__crop-icon" name="publish-filter" checked="">
+                    <label class="publish__toggle publish__toggle--crop" for="publish__crop-icon"></label>
+                    <input type="radio" class="publish__input publish__input--fill" id="publish__fill-icon" name="publish-filter">
+                    <label class="publish__toggle publish__toggle--fill" for="publish__fill-icon"></label>
+                    <input type="radio" class="publish__input publish__input--contrast" id="publish__contrast-icon" name="publish-filter">
+                    <label class="publish__toggle publish__toggle--contrast" for="publish__contrast-icon"></label>
+                  </div>
+                  <div class="publish__tools-container">
+                    <div class="publish__tools-wrapper publish__tools-wrapper--crop publish__tools-wrapper--current">
+                      <input type="range" id="publish__range--crop" min="0" max="100" class="publish__range publish__range--crop">
+                    </div>
+                    <div class="publish__tools-wrapper publish__tools-wrapper--fill">
+                      <input type="range" id="publish__range--fill" min="0" max="100" class="publish__range publish__range--fill">
+                    </div>
+                    <div class="publish__tools-wrapper publish__tools-wrapper--contrast">
+                      <input type="range" id="publish__range--contrast" min="0" max="100" class="publish__range publish__range--contrast">
+                    </div>
+                  </div>
+                  <div class="publish__confirm">
+                    <button class="publish__confirm-button button publish__confirm-button--post">Запостить</button>
+                    <button class="publish__confirm-button button publish__confirm-button--cancel">Отмена</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__container">
+        <a class="page-footer__logo" src="https://htmlacademy.ru/intensive/adaptive"></a>
+        <ul class="social-buttons">
+          <li class="social-buttons__item">
+            <a class="social-buttons__link social-buttons__link--twitter" src="https://twitter.com/home" aria-label="Twiiter"></a>
+          </li>
+          <li class="social-buttons__item">
+            <a class="social-buttons__link social-buttons__link--facebook" src="https://ru-ru.facebook.com/" aria-label="Fаcebook"></a>
+          </li>
+          <li class="social-buttons__item">
+            <a class="social-buttons__link social-buttons__link--youtube social-buttons__link--last" src="https://play.google.com/store" aria-label="Google Play"></a>
+          </li>
+        </ul>
+        <span class="page-footer__copyright">Разработано
+          <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        </span>
+      </div>
+    </footer>
+    <noscript>
+      <style type="text/css">
+        .main-menu--closed {
+          display: block;
+          position: relative;
+        }
+
+        .main-nav__toggle--no-js {
+          display: none;
+        }
+
+        .main-nav__logo-wrapper {
+          border-bottom: 1px solid $pink;
+        }
+
+        @media (max-width: 660px) {
+          .page-header {
+            background-position: 50% 278px;
+            padding-bottom: 83px;
+          }
+        }
+
+        @media (min-width: 660px) and (max-width: 960px) {
+          .page-header {
+            background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+            background-position: 50% 250px;
+            padding-bottom: 0;
+          }
+        }
+
+        @media (min-width: 960px) {
+          .main-menu {
+            display: flex;
+          }
+        }
+
+        @media (max-width: 960px) {
+          .page-header__nav-wrapper--transparent {
+            background-color: #283645;
+          }
+        }
+      </style>
+    </noscript>
+  </body>
+</html>
