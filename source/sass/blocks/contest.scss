@@ -190,6 +190,7 @@
 
 .contest__submit {
   padding-bottom: 16px;
+  margin: 0 auto;
 }
 
 .contest__submit-button {
@@ -222,6 +223,7 @@
 
   &--star {
     color: $pink;
+    display: inline;
   }
 
   &--add {
@@ -578,6 +580,14 @@
 
   .contest__submit-required {
     display: block;
+
+    &--add {
+      display: none;
+    }
+
+    &--star {
+      display: inline;
+    }
   }
 }
 

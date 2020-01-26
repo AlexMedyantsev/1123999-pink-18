@@ -1,3 +1,9 @@
+.post {
+  &--panorama {
+    margin: 0;
+  }
+}
+
 .post__article {
   width: 280px;
   margin-top: 20px;
@@ -97,6 +103,10 @@
     flex-wrap: wrap;
     width: 620px;
     margin-top: 50px;
+
+    &--panorama {
+      margin: 0 auto;
+    }
   }
 
   .post__article {
@@ -156,6 +166,10 @@
     width: 940px;
     margin: 0 auto;
     margin-top: 50px;
+
+    &--panorama {
+      margin: 0 auto;
+    }
   }
 
   .post__article {
