@@ -8,7 +8,8 @@
   width: 100%;
 
   &--closed {
-    display: none;
+    display: block;
+    position: relative;
   }
 }
 
@@ -60,5 +61,11 @@
 
   .main-menu__item:nth-child(4n + 4) {
     margin-right: 10px;
+  }
+}
+
+@media (min-width: 960px) {
+  .main-menu {
+    display: flex;
   }
 }
