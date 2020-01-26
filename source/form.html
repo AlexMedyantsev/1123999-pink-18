@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="page-header page-header--form">
@@ -43,11 +43,11 @@
             <ul class=" contest__name-list">
               <li class="contest__name-item">
                 <label class="contest__name-label">Фамилия:</label>
-                <input type="text" class="contest__name-input input" id="surname" aria-label="Укажите фамилию" placeholder="Укажите фамилию *" required>
+                <input type="text" class="contest__name-input input" id="surname" aria-label="Укажите фамилию" placeholder="Укажите фамилию *" required="">
               </li>
               <li class="contest__name-item">
                 <label class="contest__name-label">Имя:</label>
-                <input type="text" class="contest__name-input input" id="name" aria-label="Укажите Имя" placeholder="Введите ваше имя *" required>
+                <input type="text" class="contest__name-input input" id="name" aria-label="Укажите Имя" placeholder="Введите ваше имя *" required="">
               </li>
               <li class="contest__name-item">
                 <label class="contest__name-label">Отчество:</label>
@@ -60,11 +60,11 @@
             <legend class="contest__achievements-legend contest__legend contest__legend--inside">Ваши безбашенные достижения в путешествии</legend>
             <ul class="contest__achievements-list">
               <li class="contest__achievements-item contest__achievements-item--shark">
-                <input class="contest__achievements-input contest__checkbox input" type="checkbox" name="achivement" id="shark-selfie" value="shark-selfie" checked>
+                <input class="contest__achievements-input contest__checkbox input" type="checkbox" name="achivement" id="shark-selfie" value="shark-selfie" checked="">
                 <label class="contest__achievements-label" for="shark-selfie">Сделал селфи с акулой</label>
               </li>
               <li class="contest__achievements-item contest__achievements-item--beach">
-                <input class="contest__achievements-input contest__checkbox input" type="checkbox" name="achivement" id="beach-burned" value="beach-burned" checked>
+                <input class="contest__achievements-input contest__checkbox input" type="checkbox" name="achivement" id="beach-burned" value="beach-burned" checked="">
                 <label class="contest__achievements-label" for="beach-burned">Обгорел на пляже</label>
               </li>
               <li class="contest__achievements-item contest__achievements-item--chuck">
@@ -76,13 +76,14 @@
                 <label class="contest__achievements-label" for="bought-souvenirs">Накупил сувениров</label>
               </li>
               <li class="contest__achievements-item contest__achievements-item--tower">
-                <input class="contest__achievements-input contest__checkbox input" type="checkbox" name="achivement" id="hold-the-tower" value="hold-the-tower" checked>
+                <input class="contest__achievements-input contest__checkbox input" type="checkbox" name="achivement" id="hold-the-tower" value="hold-the-tower" checked="">
                 <label class="contest__achievements-label" for="hold-the-tower">Удержал башню</label>
               </li>
               <li class="contest__achievements-item contest__achievements-item--hotel">
                 <input class="contest__achievements-input contest__checkbox input" type="checkbox" name="achivement" id="busted-the-hotel" value="busted-the-hotel">
                 <label class="contest__achievements-label" for="busted-the-hotel">Разгромил отель</label>
               </li>
+            </ul>
           </fieldset>
           <!-- Контактная информация -->
           <fieldset class="contest__contacts contest__fieldset contest__fieldset--small-border">
@@ -94,16 +95,16 @@
               </li>
               <li class="contest__contacts-item contest__contacts-item--mail">
                 <label class="contest__contacts-label" for="email">Адрес почты</label>
-                <input class="contest__contacts-input input" type="email" id="email" aria-label="Введите почту" placeholder="Введите почту *" required>
+                <input class="contest__contacts-input input" type="email" id="email" aria-label="Введите почту" placeholder="Введите почту *" required="">
               </li>
-            </div>
+            </ul>
           </fieldset>
           <!-- Использованное приложение -->
           <fieldset class="contest__app contest__fieldset contest__fieldset--small-border">
             <legend class="contest__app-legend contest__legend contest__legend--inside">С каким приложением путешествовали?</legend>
             <ul class="contest__app-list">
               <li class="contest__app-item">
-                <input class="contest__app-input contest__radio input" id="ios" type="radio" name="app-used" value="ios" aria-label="ios" checked>
+                <input class="contest__app-input contest__radio input" id="ios" type="radio" name="app-used" value="ios" aria-label="ios" checked="">
                 <label class="contest__app-label" for="ios">Pink для iOS</label>
               </li>
               <li class="contest__app-item">
@@ -118,7 +119,7 @@
           </fieldset>
           <fieldset class="contest__comment contest__fieldset contest__fieldset--small-border">
             <legend class="contest__comment-legend contest__legend contest__legend--inside">Опишите свои эмоции</legend>
-            <textarea class="contest__comment-text input"type="comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" aria-label="Расскажите о себе"></textarea>
+            <textarea class="contest__comment-text input" type="comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" aria-label="Расскажите о себе"></textarea>
           </fieldset>
           <div class="contest__submit">
             <button class="contest__submit-button" type="submit">Отправить форму</button>

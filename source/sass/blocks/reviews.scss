@@ -106,6 +106,8 @@
       width: 22px;
       height: 41px;
       background: url("../img/icon-review-arrow-left.svg");
+      background-repeat: no-repeat;
+      opacity: 0.3;
     }
 
     &::after {
@@ -116,6 +118,8 @@
       width: 22px;
       height: 41px;
       background: url("../img/icon-review-arrow-right.svg");
+      background-repeat: no-repeat;
+      opacity: 0.3;
     }
   }
 
