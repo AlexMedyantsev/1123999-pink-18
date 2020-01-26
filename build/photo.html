@@ -5,6 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <noscript>
+      <style>
+        .main-menu--closed {
+          display: block;
+          position: relative;
+        }
+
+        .main-nav__toggle--no-js {
+          display: none;
+        }
+
+        .main-nav__logo-wrapper {
+          border-bottom: 1px solid transparent;
+        }
+
+        @media (max-width: 660px) {
+          .page-header {
+            background-position: 50% 278px;
+            padding-bottom: 83px;
+          }
+        }
+
+        @media (min-width: 660px) and (max-width: 960px) {
+          .page-header {
+            background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+            background-position: 50% 250px;
+            padding-bottom: 0;
+          }
+        }
+
+        @media (min-width: 960px) {
+          .main-menu {
+            display: flex;
+          }
+        }
+
+        @media (max-width: 960px) {
+          .page-header__nav-wrapper--transparent {
+            background-color: #283645;
+          }
+        }
+      </style>
+    </noscript>
   </head>
   <body>
     <header class="page-header page-header--photo">
@@ -43,7 +86,7 @@
             <picture class="panorama-best__image-picture">
               <source media="(min-width: 960px)" srcset="../img/panorama-desktop@1x.jpg 1x, ../img/panorama-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="../img/panorama-tablet@1x.jpg 1x, ../img/panorama-tablet@2x.jpg 2x">
-              <img class="panorama-best__image" srcset="../img/panorama-mobile@1x.jpg 1x, ../img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+              <img class="panorama-best__image" src="../img/panorama-mobile@1x.jpg" srcset="../img/panorama-mobile@1x.jpg 1x, ../img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
             </picture>
           </div>
           <div class="panorama-best__comment">
@@ -58,7 +101,7 @@
             <picture>
               <source media="(min-width:960px)" srcset="../img/photo-car-desktop@1x.jpg 1x, ../img/photo-car-desktop@2x.jpg 2x">
               <source media="(min-width:660px)" srcset="../img/photo-car-tablet@1x.jpg 1x, ../img/photo-car-tablet@2x.jpg 2x">
-              <img class="post__image" srcset="../img/photo-car-mobile@1x 1x, ../img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+              <img class="post__image" src="../img/photo-car-mobile@1x" srcset="../img/photo-car-mobile@1x 1x, ../img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
             </picture>
             <div class="post__comment">
               <p class="post__author-container">
@@ -73,7 +116,7 @@
             <picture>
               <source media="(min-width:960px)" srcset="../img/photo-drumset-desktop@1x.jpg 1x, ../img/photo-drumset-desktop@2x.jpg 2x">
               <source media="(min-width:660px)" srcset="../img/photo-drumset-tablet@1x.jpg 1x, ../img/photo-drumset-tablet@2x.jpg 2x">
-              <img class="post__image" srcset="../img/photo-drumset-mobile@1x 1x, ../img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+              <img class="post__image" src="../img/photo-drumset-mobile@1x" srcset="../img/photo-drumset-mobile@1x 1x, ../img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
             </picture>
             <div class="post__comment">
               <p class="post__author-container">
@@ -88,7 +131,7 @@
             <picture>
               <source media="(min-width:960px)" srcset="../img/photo-window-desktop@1x.jpg 1x, ../img/photo-window-desktop@2x.jpg 2x">
               <source media="(min-width:660px)" srcset="../img/photo-window-tablet@1x.jpg 1x, ../img/photo-window-tablet@2x.jpg 2x">
-              <img class="post__image" srcset="../img/photo-window-mobile@1x 1x, ../img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+              <img class="post__image" src="../img/photo-window-mobile@1x" srcset="../img/photo-window-mobile@1x 1x, ../img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
             </picture>
             <div class="post__comment">
               <p class="post__author-container">
@@ -103,7 +146,7 @@
             <picture>
               <source media="(min-width:960px)" srcset="../img/photo-fair-desktop@1x.jpg 1x, ../img/photo-fair-desktop@2x.jpg 2x">
               <source media="(min-width:660px)" srcset="../img/photo-fair-tablet@1x.jpg 1x, ../img/photo-fair-tablet@2x.jpg 2x">
-              <img class="post__image" srcset="../img/photo-fair-mobile@1x 1x, ../img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+              <img class="post__image" src="../img/photo-fair-mobile@1x" srcset="../img/photo-fair-mobile@1x 1x, ../img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
             </picture>
             <div class="post__comment">
               <p class="post__author-container">
@@ -118,7 +161,7 @@
             <picture>
               <source media="(min-width:960px)" srcset="../img/photo-pov-desktop@1x.jpg 1x, ../img/photo-pov-desktop@2x.jpg 2x">
               <source media="(min-width:660px)" srcset="../img/photo-pov-tablet@1x.jpg 1x, ../img/photo-pov-tablet@2x.jpg 2x">
-              <img class="post__image" srcset="../img/photo-pov-mobile@1x 1x, ../img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+              <img class="post__image" src="../img/photo-pov-mobile@1x" srcset="../img/photo-pov-mobile@1x 1x, ../img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
             </picture>
             <div class="post__comment">
               <p class="post__author-container">
@@ -133,7 +176,7 @@
             <picture>
               <source media="(min-width:960px)" srcset="../img/photo-wing-desktop@1x.jpg 1x, ../img/photo-wing-desktop@2x.jpg 2x">
               <source media="(min-width:660px)" srcset="../img/photo-wing-tablet@1x.jpg 1x, ../img/photo-wing-tablet@2x.jpg 2x">
-              <img class="post__image" srcset="../img/photo-wing-mobile@1x 1x, ../img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+              <img class="post__image" src="../img/photo-wing-mobile@1x" srcset="../img/photo-wing-mobile@1x 1x, ../img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
             </picture>
             <div class="post__comment">
               <p class="post__author-container">
@@ -154,7 +197,7 @@
               <picture class="publish__picture">
                 <source media="(min-width:960px)" srcset="../img/photo-road-desktop@1x.jpg 1x, ../img/photo-road-desktop@2x.jpg 2x">
                 <source media="(min-width:660px)" srcset="../img/photo-road-tablet@1x.jpg 1x, ../img/photo-road-tablet@2x.jpg 2x">
-                <img class="publish__image" srcset="../img/photo-road-mobile@1x 1x, ../img/photo-road-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
+                <img class="publish__image" src="../img/photo-road-mobile@1x" srcset="../img/photo-road-mobile@1x 1x, ../img/photo-road-mobile@2x.jpg 2x" width="280" height="180" alt="Загруженная фотография">
               </picture>
               <div class="publish__settings">
                 <div class="publish__filters">
@@ -190,16 +233,16 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__container">
-        <a class="page-footer__logo" src="https://htmlacademy.ru/intensive/adaptive"></a>
+        <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
         <ul class="social-buttons">
           <li class="social-buttons__item">
-            <a class="social-buttons__link social-buttons__link--twitter" src="https://twitter.com/home" aria-label="Twiiter"></a>
+            <a class="social-buttons__link social-buttons__link--twitter" href="https://twitter.com/home" aria-label="Twiiter"></a>
           </li>
           <li class="social-buttons__item">
-            <a class="social-buttons__link social-buttons__link--facebook" src="https://ru-ru.facebook.com/" aria-label="Fаcebook"></a>
+            <a class="social-buttons__link social-buttons__link--facebook" href="https://ru-ru.facebook.com/" aria-label="Fаcebook"></a>
           </li>
           <li class="social-buttons__item">
-            <a class="social-buttons__link social-buttons__link--youtube social-buttons__link--last" src="https://play.google.com/store" aria-label="Google Play"></a>
+            <a class="social-buttons__link social-buttons__link--youtube social-buttons__link--last" href="https://play.google.com/store" aria-label="Google Play"></a>
           </li>
         </ul>
         <span class="page-footer__copyright">Разработано
@@ -207,48 +250,5 @@
         </span>
       </div>
     </footer>
-    <noscript>
-      <style type="text/css">
-        .main-menu--closed {
-          display: block;
-          position: relative;
-        }
-
-        .main-nav__toggle--no-js {
-          display: none;
-        }
-
-        .main-nav__logo-wrapper {
-          border-bottom: 1px solid $pink;
-        }
-
-        @media (max-width: 660px) {
-          .page-header {
-            background-position: 50% 278px;
-            padding-bottom: 83px;
-          }
-        }
-
-        @media (min-width: 660px) and (max-width: 960px) {
-          .page-header {
-            background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
-            background-position: 50% 250px;
-            padding-bottom: 0;
-          }
-        }
-
-        @media (min-width: 960px) {
-          .main-menu {
-            display: flex;
-          }
-        }
-
-        @media (max-width: 960px) {
-          .page-header__nav-wrapper--transparent {
-            background-color: #283645;
-          }
-        }
-      </style>
-    </noscript>
   </body>
 </html>

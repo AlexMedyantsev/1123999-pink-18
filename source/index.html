@@ -5,6 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <noscript>
+      <style>
+        .main-menu--closed {
+          display: block;
+          position: relative;
+        }
+
+        .main-nav__toggle--no-js {
+          display: none;
+        }
+
+        .main-nav__logo-wrapper {
+          border-bottom: 1px solid transparent;
+        }
+
+        @media (max-width: 660px) {
+          .page-header {
+            background-position: 50% 268px;
+          }
+        }
+
+        @media (min-width: 660px) and (max-width: 960px) {
+          .page-header {
+            background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
+            background-position: 50% 250px;
+          }
+        }
+
+        @media (min-width: 960px) {
+          .main-menu {
+            display: flex;
+          }
+        }
+
+        @media (max-width: 960px) {
+          .page-header__nav-wrapper--transparent {
+            background-color: #283645;
+          }
+        }
+      </style>
+    </noscript>
   </head>
   <body>
     <div style="display:none">
@@ -218,25 +259,25 @@
       </section>
       <div class="map">
         <picture>
-          <source media="(min-width: $desktop-width)" srcset="../img/bg-map-desktop@1x.jpg, ../img/bg-map-desktop@2x.jpg 2x">
-          <source media="(min-width: $tablet-width)" srcset="../img/bg-map-tablet@1x.jpg, ../img/bg-map-tablet@2x.jpg 2x">
-          <img class="map__image" width="100%" src="../img/bg-map-mobile@1x.jpg" srcset="../img/bg-map-mobile@2x.jpg 2x" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+          <source media="(min-width: 960px)" srcset="../img/bg-map-desktop@1x.jpg, ../img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="../img/bg-map-tablet@1x.jpg, ../img/bg-map-tablet@2x.jpg 2x">
+          <img class="map__image" src="../img/bg-map-mobile@1x.jpg" srcset="../img/bg-map-mobile@2x.jpg 2x" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
         </picture>
-        <iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3A244dfff469d74f3eee917e97b10f02a3d9eb9e7236bbeacc4dfba84a6afec0d8&amp;source=constructor" frameborder="0"></iframe>
+        <iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/?um=constructor%3A244dfff469d74f3eee917e97b10f02a3d9eb9e7236bbeacc4dfba84a6afec0d8&amp;source=constructor"></iframe>
       </div>
     </main>
     <footer class="page-footer page-footer--index">
       <div class="page-footer__container">
-        <a class="page-footer__logo" src="https://htmlacademy.ru/intensive/adaptive"></a>
+        <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
         <ul class="social-buttons social-buttons--index">
           <li class="social-buttons__item">
-            <a class="social-buttons__link social-buttons__link--twitter" src="https://twitter.com/home" aria-label="Twiiter"></a>
+            <a class="social-buttons__link social-buttons__link--twitter" href="https://twitter.com/home" aria-label="Twiiter"></a>
           </li>
           <li class="social-buttons__item">
-            <a class="social-buttons__link social-buttons__link--facebook" src="https://ru-ru.facebook.com/" aria-label="Fаcebook"></a>
+            <a class="social-buttons__link social-buttons__link--facebook" href="https://ru-ru.facebook.com/" aria-label="Fаcebook"></a>
           </li>
           <li class="social-buttons__item">
-            <a class="social-buttons__link social-buttons__link--youtube" src="https://play.google.com/store" aria-label="Google Play"></a>
+            <a class="social-buttons__link social-buttons__link--youtube" href="https://play.google.com/store" aria-label="Google Play"></a>
           </li>
         </ul>
         <span class="page-footer__copyright">Разработано
@@ -244,46 +285,5 @@
         </span>
       </div>
     </footer>
-    <noscript>
-      <style type="text/css">
-        .main-menu--closed {
-          display: block;
-          position: relative;
-        }
-
-        .main-nav__toggle--no-js {
-          display: none;
-        }
-
-        .main-nav__logo-wrapper {
-          border-bottom: 1px solid $pink;
-        }
-
-        @media (max-width: 660px) {
-          .page-header {
-            background-position: 50% 268px;
-          }
-        }
-
-        @media (min-width: 660px) and (max-width: 960px) {
-          .page-header {
-            background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
-            background-position: 50% 250px;
-          }
-        }
-
-        @media (min-width: 960px) {
-          .main-menu {
-            display: flex;
-          }
-        }
-
-        @media (max-width: 960px) {
-          .page-header__nav-wrapper--transparent {
-            background-color: #283645;
-          }
-        }
-      </style>
-    </noscript>
   </body>
 </html>
