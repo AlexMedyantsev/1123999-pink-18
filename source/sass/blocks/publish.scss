@@ -61,9 +61,6 @@
 .publish__input {
   display: none;
   cursor: pointer;
-  // &:checked + .publish__toggle {
-  //   background-color: red;
-  // }
 }
 
 .publish__toggle {
@@ -106,21 +103,21 @@
 }
 
 .publish__range {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
   width: 240px;
   height: 2px;
   background: black;
-  appearance: none;
+}
 
-  &::-webkit-slider-thumb {
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background-color: $light-gray;
-    border: 2px solid $pink;
-    border-radius: 50%;
-  }
+.publish__range-slider {
+  width: 15px;
+  height: 15px;
+  background-color: $light-gray;
+  border: 2px solid $pink;
+  border-radius: 50%;
 }
 
 .publish__icon {
