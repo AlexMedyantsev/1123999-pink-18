@@ -212,12 +212,6 @@
     border-bottom: 1px solid gray;
     position: relative;
     display: flex;
-  }
-
-  .publish__range {
-    margin: 0;
-    width: 202px;
-    margin-right: 17px;
 
     &--crop::before {
       position: absolute;
@@ -251,6 +245,12 @@
       background: url("../img/icon-editor-contrast.svg") no-repeat;
       background-size: cover;
     }
+  }
+
+  .publish__range {
+    margin: 0;
+    width: 202px;
+    margin-right: 17px;
   }
 
   .publish__filters {
@@ -318,10 +318,7 @@
     margin-left: auto;
   }
 
-  .publish__range {
-    width: 288px;
-    margin-right: 29px;
-
+  .publish__tools-wrapper {
     &--crop::before {
       position: absolute;
       content: "";
@@ -354,6 +351,11 @@
       background: url("../img/icon-editor-contrast.svg") no-repeat;
       background-size: 100%;
     }
+  }
+
+  .publish__range {
+    width: 288px;
+    margin-right: 29px;
   }
 
   .publish__confirm {
